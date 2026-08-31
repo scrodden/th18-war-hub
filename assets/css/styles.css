@@ -313,3 +313,32 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
   * { scroll-behavior: auto !important; }
   .btn:hover, .nav-card:hover { transform: none; }
 }
+
+/* ---------- Fresh (auto-updated weekly) ---------- */
+.fresh-section { background: linear-gradient(180deg, rgba(78,201,138,.05), transparent); }
+.fresh-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.fresh-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(78,201,138,.12); color: var(--ground);
+  border: 1px solid rgba(78,201,138,.4);
+  padding: 5px 12px; border-radius: 999px; font-weight: 700; font-size: .8rem;
+}
+.fresh-meta { color: var(--faint); font-size: .85rem; }
+.tag-new {
+  background: var(--meteor); color: #fff; font-size: .62rem; font-weight: 800;
+  letter-spacing: .05em; padding: 2px 7px; border-radius: 999px;
+}
+.fresh-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 18px; }
+.fresh-item {
+  display: flex; align-items: center; gap: 10px; padding: 12px 14px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--panel);
+  color: var(--text); font-weight: 600; font-size: .9rem;
+  transition: transform .12s ease, border-color .12s ease;
+}
+.fresh-item:hover { border-color: var(--gold); text-decoration: none; transform: translateY(-2px); }
+.fresh-item .ic { font-size: 1.1rem; }
+.fresh-item .txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.fresh-item .src { color: var(--faint); font-size: .72rem; font-weight: 500; }
+.fresh-item .tag-new { margin-left: auto; }
+.fresh-empty { color: var(--muted); font-size: .92rem; margin-top: 14px; }
+.fresh-more { color: var(--faint); font-size: .84rem; margin-top: 14px; }

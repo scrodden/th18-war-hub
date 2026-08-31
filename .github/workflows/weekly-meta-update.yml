@@ -1,0 +1,45 @@
+name: Weekly meta update
+
+# Runs every Tuesday to refresh the "Fresh this week" army & base links,
+# then commits the result so GitHub Pages redeploys automatically.
+on:
+  schedule:
+    # 13:00 UTC every Tuesday (cron day-of-week 2 = Tuesday). Times are UTC.
+    - cron: "0 13 * * 2"
+  workflow_dispatch:        # lets you run it on demand from the Actions tab
+
+# Allow the built-in token to push the updated data file.
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-meta-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scan community sources for new army & base links
+        run: python scripts/update_meta.py
+
+      - name: Commit & push if anything changed
+        run: |
+          git config user.name  "th18-meta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/latest.json; then
+            echo "No changes to data/latest.json — nothing to commit."
+          else
+            git add data/latest.json
+            git commit -m "Weekly meta refresh: $(date -u +%Y-%m-%d)"
+            git push
+            echo "Pushed updated data/latest.json."
+          fi
