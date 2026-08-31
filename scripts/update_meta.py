@@ -58,6 +58,100 @@ LAYOUT_TYPE_RE = re.compile(r"TH\d+(?::|%3A)([A-Za-z]{2})", re.IGNORECASE)
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/125.0 Safari/537.36")
 
+# --- Army-link decoding --------------------------------------------------
+# clashId -> unit name maps. Fetched live each run from the community-maintained
+# clash-armies game data (so newly released troops/spells decode automatically),
+# with the embedded snapshot below as a fallback if that fetch ever fails.
+GAMEDATA_URL = "https://raw.githubusercontent.com/NinjaInShade/clash-armies/HEAD/game-data.json5"
+
+_TROOPS = {0: "Barbarian", 1: "Archer", 2: "Goblin", 3: "Giant", 4: "Wall Breaker", 5: "Balloon", 6: "Wizard", 7: "Healer", 8: "Dragon", 9: "P.E.K.K.A", 10: "Minion", 11: "Hog Rider", 12: "Valkyrie", 13: "Golem", 15: "Witch", 17: "Lava Hound", 22: "Bowler", 23: "Baby Dragon", 24: "Miner", 26: "Super Barbarian", 27: "Super Archer", 28: "Super Wall Breaker", 29: "Super Giant", 53: "Yeti", 55: "Sneaky Goblin", 56: "Super Miner", 57: "Rocket Balloon", 58: "Ice Golem", 59: "Electro Dragon", 63: "Inferno Dragon", 64: "Super Valkyrie", 65: "Dragon Rider", 66: "Super Witch", 76: "Ice Hound", 80: "Super Bowler", 81: "Super Dragon", 82: "Headhunter", 83: "Super Wizard", 84: "Super Minion", 95: "Electro Titan", 97: "Apprentice Warden", 98: "Super Hog Rider", 109: "Ruin Witch", 110: "Root Rider", 123: "Druid", 132: "Thrower", 147: "Super Yeti", 150: "Furnace", 177: "Meteor Golem"}
+_SPELLS = {0: "Lightning", 1: "Healing", 2: "Rage", 3: "Jump", 5: "Freeze", 9: "Poison", 10: "Earthquake", 11: "Haste", 16: "Clone", 17: "Skeleton", 28: "Bat", 35: "Invisibility", 53: "Recall", 70: "Overgrowth", 98: "Revive", 109: "Ice Block", 120: "Totem", 123: "Angry Spell"}
+_SIEGES = {51: "Wall Wrecker", 52: "Battle Blimp", 62: "Stone Slammer", 75: "Siege Barracks", 87: "Log Launcher", 91: "Flame Flinger", 92: "Battle Drill", 135: "Troop Launcher", 188: "Sky Wagon"}
+
+_SECTION_RE = re.compile(r"^\t(\w+):\s*\[")
+_NAME_RE = re.compile(r"name:\s*'([^']+)'")
+_CLASHID_RE = re.compile(r"clashId:\s*(\d+)")
+_UNIT_RE = re.compile(r"(\d+)x(\d+)")
+_SEG_RE = re.compile(r"([idus])((?:\d+x\d+-?)+)")
+
+
+def parse_gamedata(text):
+    """Parse clash-armies game-data.json5 into troops/spells/sieges clashId maps."""
+    out = {"troops": {}, "spells": {}, "sieges": {}}
+    cur = None
+    curname = None
+    for ln in text.split("\n"):
+        sec = _SECTION_RE.match(ln)
+        if sec:
+            cur = sec.group(1)
+            curname = None
+            continue
+        if cur in out:
+            nm = _NAME_RE.search(ln)
+            if nm:
+                curname = nm.group(1)
+                continue
+            idm = _CLASHID_RE.search(ln)
+            if idm and curname is not None:
+                out[cur][int(idm.group(1))] = curname
+                curname = None
+    return out["troops"], out["spells"], out["sieges"]
+
+
+def load_unit_maps():
+    try:
+        t, s, g = parse_gamedata(fetch(GAMEDATA_URL, timeout=25))
+        if len(t) >= 10 and len(s) >= 5:
+            return t, s, g, "live"
+    except Exception:
+        pass
+    return dict(_TROOPS), dict(_SPELLS), dict(_SIEGES), "embedded"
+
+
+def decode_army(url, troops, spells, sieges):
+    """Return {head, spells, comp} describing an army link's composition, or None."""
+    m = re.search(r"army=([^&\s\"']+)", url)
+    if not m:
+        return None
+    segs = dict(_SEG_RE.findall(m.group(1)))
+
+    def pairs(seg):
+        return [(int(a), int(i)) for a, i in _UNIT_RE.findall(seg or "")]
+
+    troop_list, siege_list = [], []
+    for amt, cid in pairs(segs.get("u")):
+        if cid in troops:
+            troop_list.append((amt, troops[cid]))
+        elif cid in sieges:
+            siege_list.append((amt, sieges[cid]))
+        else:
+            troop_list.append((amt, "#" + str(cid)))
+    spell_list = [(amt, spells.get(cid, "#" + str(cid))) for amt, cid in pairs(segs.get("s"))]
+
+    if not troop_list and not spell_list:
+        return None
+
+    top = sorted(troop_list, key=lambda x: -x[0])
+    head = " · ".join("%d× %s" % (a, n) for a, n in top[:3])
+    if len(top) > 3:
+        head += " +%d" % (len(top) - 3)
+
+    # unique spell names, order preserved
+    seen = []
+    for _, n in spell_list:
+        if n not in seen:
+            seen.append(n)
+    spells_str = " · ".join(seen)
+
+    parts = []
+    if troop_list:
+        parts.append("Troops: " + ", ".join("%d× %s" % (a, n) for a, n in troop_list))
+    if siege_list:
+        parts.append("Siege: " + ", ".join(n for _, n in siege_list))
+    if spell_list:
+        parts.append("Spells: " + ", ".join("%d× %s" % (a, n) for a, n in spell_list))
+    return {"head": head, "spells": spells_str, "comp": " | ".join(parts)}
+
 
 def fetch(url, timeout=25):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
@@ -174,10 +268,20 @@ def main():
     pro_armies = sum(1 for x in fin_armies if x.get("pro"))
     pro_bases = sum(1 for x in fin_bases if x.get("pro"))
 
+    # Decode each army link into a readable composition (troops + spells).
+    troops_m, spells_m, sieges_m, maps_src = load_unit_maps()
+    decoded = 0
+    for a in fin_armies:
+        info = decode_army(a["url"], troops_m, spells_m, sieges_m)
+        if info:
+            a["head"], a["spells"], a["comp"] = info["head"], info["spells"], info["comp"]
+            decoded += 1
+
     out = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources_ok": len(ok),
         "sources_failed": failed,
+        "maps_source": maps_src,
         "armies": fin_armies,
         "bases": fin_bases,
     }
@@ -189,6 +293,7 @@ def main():
     print(f"[update_meta] {today}: +{a1 + a2} new armies, +{b1 + b2} new bases")
     print(f"[update_meta] totals: {len(fin_armies)} armies ({pro_armies} pro), "
           f"{len(fin_bases)} bases ({pro_bases} pro)")
+    print(f"[update_meta] decoded {decoded}/{len(fin_armies)} armies (unit map: {maps_src})")
     print(f"[update_meta] sources ok: {len(ok)}, failed: {len(failed)}")
     for f in failed:
         print(f"   - failed: {f}")

@@ -340,6 +340,11 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
 .fresh-item .txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
 .fresh-item .src { color: var(--faint); font-size: .72rem; font-weight: 500; }
 .fresh-item .badges { margin-left: auto; display: flex; gap: 5px; align-items: center; }
+.fresh-item.army { align-items: flex-start; }
+.fresh-item.army .ic { margin-top: 1px; }
+.fresh-item .head { font-weight: 700; font-size: .9rem; line-height: 1.3; }
+.fresh-item .sub { color: var(--muted); font-size: .76rem; font-weight: 500; margin-top: 1px; }
+#fresh-armies, #pro-armies { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 .fresh-empty { color: var(--muted); font-size: .92rem; margin-top: 14px; }
 .fresh-more { color: var(--faint); font-size: .84rem; margin-top: 14px; }
 .tag-pro {

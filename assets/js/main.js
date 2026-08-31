@@ -95,19 +95,31 @@
 
   var LIMIT = 12;
 
-  function renderList(el, items, ico, labelFn) {
+  function itemHtml(it, kind) {
+    if (kind === "army") {
+      var head = it.head || "Copy army";
+      var sub = it.spells ? '<span class="sub">🧪 ' + esc(it.spells) + "</span>" : "";
+      var tip = it.comp ? ' title="' + esc(it.comp) + '"' : "";
+      return '<a class="fresh-item army" href="' + esc(it.url) + '" rel="nofollow"' + tip + ">" +
+        '<span class="ic">⚔️</span>' +
+        '<span class="txt"><span class="head">' + esc(head) + "</span>" + sub +
+        '<span class="src">' + esc(it.source || "") + "</span></span>" +
+        badges(it) + "</a>";
+    }
+    return '<a class="fresh-item" href="' + esc(it.url) + '" rel="nofollow">' +
+      '<span class="ic">🛡️</span>' +
+      '<span class="txt">' + esc(baseLabel(it)) +
+      '<span class="src">' + esc(it.source || "") + "</span></span>" +
+      badges(it) + "</a>";
+  }
+
+  function renderList(el, items, kind) {
     if (!el) return;
     if (!items || !items.length) {
       el.innerHTML = '<p class="fresh-empty">No links yet — check back after the next Tuesday refresh.</p>';
       return;
     }
-    el.innerHTML = items.slice(0, LIMIT).map(function (it) {
-      return '<a class="fresh-item" href="' + esc(it.url) + '" rel="nofollow">' +
-        '<span class="ic">' + ico + '</span>' +
-        '<span class="txt">' + esc(labelFn(it)) +
-        '<span class="src">' + esc(it.source || "") + '</span></span>' +
-        badges(it) + "</a>";
-    }).join("");
+    el.innerHTML = items.slice(0, LIMIT).map(function (it) { return itemHtml(it, kind); }).join("");
     if (items.length > LIMIT) {
       var more = document.createElement("p");
       more.className = "fresh-more";
@@ -125,7 +137,6 @@
     var block = el && el.closest("[data-pro-block]");
     if (block && !n) block.style.display = "none";
   }
-  var armyLabel = function () { return "Copy army"; };
 
   fetch("data/latest.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("no data"); return r.json(); })
@@ -133,10 +144,10 @@
       var d = (data.updated || "").slice(0, 10);
       document.querySelectorAll("[data-fresh-date]").forEach(function (e) { e.textContent = d || "—"; });
       var a = split(data.armies), b = split(data.bases);
-      if (proArmyEl) { renderList(proArmyEl, a.pro, "⚔️", armyLabel); hideBlockIfEmpty(proArmyEl, a.pro.length); }
-      renderList(armyEl, a.rest, "⚔️", armyLabel);
-      if (proBaseEl) { renderList(proBaseEl, b.pro, "🛡️", baseLabel); hideBlockIfEmpty(proBaseEl, b.pro.length); }
-      renderList(baseEl, b.rest, "🛡️", baseLabel);
+      if (proArmyEl) { renderList(proArmyEl, a.pro, "army"); hideBlockIfEmpty(proArmyEl, a.pro.length); }
+      renderList(armyEl, a.rest, "army");
+      if (proBaseEl) { renderList(proBaseEl, b.pro, "base"); hideBlockIfEmpty(proBaseEl, b.pro.length); }
+      renderList(baseEl, b.rest, "base");
     })
     .catch(function () {
       document.querySelectorAll("[data-fresh-fallback]").forEach(function (n) { n.style.display = "block"; });
