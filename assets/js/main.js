@@ -161,14 +161,21 @@
 
   var LIMIT = 12;
 
+  function shortList(s, n) {
+    if (!s) return "";
+    var arr = s.split(" · ");
+    return arr.length <= n ? s : arr.slice(0, n).join(" · ") + " +" + (arr.length - n);
+  }
+
   function itemHtml(it, kind) {
     if (kind === "army") {
       var head = it.head || "Copy army";
       var sub = it.spells ? '<span class="sub">🧪 ' + esc(it.spells) + "</span>" : "";
+      var eq = it.equip ? '<span class="sub eq">🎽 ' + esc(shortList(it.equip, 6)) + "</span>" : "";
       var tip = it.comp ? ' title="' + esc(it.comp) + '"' : "";
       return '<a class="fresh-item army" href="' + esc(it.url) + '" rel="nofollow"' + tip + ">" +
         '<span class="ic">⚔️</span>' +
-        '<span class="txt"><span class="head">' + esc(head) + "</span>" + sub +
+        '<span class="txt"><span class="head">' + esc(head) + "</span>" + sub + eq +
         '<span class="src">' + esc(it.source || "") + "</span></span>" +
         badges(it) + "</a>";
     }

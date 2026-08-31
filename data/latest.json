@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T22:13:30Z",
+  "updated": "2026-08-31T22:33:37Z",
   "sources_ok": 11,
   "sources_failed": [],
   "maps_source": "live",
@@ -11,7 +11,8 @@
       "pro": true,
       "head": "9× Dragon · 6× Balloon · 4× Archer +5",
       "spells": "Ice Block · Rage · Poison · Overgrowth · Totem",
-      "comp": "Troops: 6× Balloon, 1× Yeti, 2× Wizard, 1× Baby Dragon, 4× Archer, 1× Minion, 9× Dragon, 4× Dragon Rider | Siege: Log Launcher, Battle Drill, Sky Wagon | Spells: 4× Ice Block, 1× Rage, 1× Poison, 1× Overgrowth, 2× Totem"
+      "comp": "Troops: 6× Balloon, 1× Yeti, 2× Wizard, 1× Baby Dragon, 4× Archer, 1× Minion, 9× Dragon, 4× Dragon Rider | Siege: Log Launcher, Battle Drill, Sky Wagon | Spells: 4× Ice Block, 1× Rage, 1× Poison, 1× Overgrowth, 2× Totem | Heroes: Dragon Duke (Electro Fangs + Revenge Deck) · Phoenix; Minion Prince (Meteor Staff + Dark Orb) · Angry Jelly; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Royal Champion (Rocket Spear + Seeking Shield) · Spirit Fox",
+      "equip": "Electro Fangs · Revenge Deck · Meteor Staff · Dark Orb · Eternal Tome · Rage Gem · Rocket Spear · Seeking Shield"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p4e52_53-1p17e48_17-2m1p16e34_4-6p11e43_49i1x10-1x5-4x84-1x75d2x98u8x65-5x63-5x57-1x23-2x6-3x10-1x1-1x135-1x91-1x75s5x120-1x5-1x9-4x10",
@@ -20,7 +21,8 @@
       "pro": true,
       "head": "8× Dragon Rider · 5× Inferno Dragon · 5× Rocket Balloon +4",
       "spells": "Totem · Freeze · Poison · Earthquake",
-      "comp": "Troops: 8× Dragon Rider, 5× Inferno Dragon, 5× Rocket Balloon, 1× Baby Dragon, 2× Wizard, 3× Minion, 1× Archer | Siege: Troop Launcher, Flame Flinger, Siege Barracks | Spells: 5× Totem, 1× Freeze, 1× Poison, 4× Earthquake"
+      "comp": "Troops: 8× Dragon Rider, 5× Inferno Dragon, 5× Rocket Balloon, 1× Baby Dragon, 2× Wizard, 3× Minion, 1× Archer | Siege: Troop Launcher, Flame Flinger, Siege Barracks | Spells: 5× Totem, 1× Freeze, 1× Poison, 4× Earthquake | Heroes: Dragon Duke (Fire Heart + Rocket Backpack) · Phoenix; Archer Queen (Action Figure + Giant Arrow) · Greedy Raven; Grand Warden (Healing Tome + Eternal Tome) · Sneezy; Minion Prince (Dark Orb + Meteor Staff) · Angry Jelly",
+      "equip": "Fire Heart · Rocket Backpack · Action Figure · Giant Arrow · Healing Tome · Eternal Tome · Dark Orb · Meteor Staff"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e57_53-1p9e17_48-2p16e5_24-4p4e13_6i1x64-1x147-1x87d1x98-2x10u5x7-11x132-1x58-1x82-1x123-4x26-2x1-3x4-2x28-1x23-3x5s3x0-3x120-1x9-1x70-1x17-1x5",
@@ -29,7 +31,8 @@
       "pro": true,
       "head": "11× Thrower · 5× Healer · 4× Super Barbarian +8",
       "spells": "Lightning · Totem · Poison · Overgrowth · Skeleton · Freeze",
-      "comp": "Troops: 5× Healer, 11× Thrower, 1× Ice Golem, 1× Headhunter, 1× Druid, 4× Super Barbarian, 2× Archer, 3× Wall Breaker, 2× Super Wall Breaker, 1× Baby Dragon, 3× Balloon | Spells: 3× Lightning, 3× Totem, 1× Poison, 1× Overgrowth, 1× Skeleton, 1× Freeze"
+      "comp": "Troops: 5× Healer, 11× Thrower, 1× Ice Golem, 1× Headhunter, 1× Druid, 4× Super Barbarian, 2× Archer, 3× Wall Breaker, 2× Super Wall Breaker, 1× Baby Dragon, 3× Balloon | Spells: 3× Lightning, 3× Totem, 1× Poison, 1× Overgrowth, 1× Skeleton, 1× Freeze | Heroes: Dragon Duke (Flame Blower + Rocket Backpack) · Angry Jelly; Archer Queen (Giant Arrow + Action Figure) · Frosty; Grand Warden (Life Gem + Rage Gem) · Sneezy; Royal Champion (Rocket Spear + Seeking Shield) · Phoenix",
+      "equip": "Flame Blower · Rocket Backpack · Giant Arrow · Action Figure · Life Gem · Rage Gem · Rocket Spear · Seeking Shield"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e53_57-6p17e43_49-2m1p16e4_34-1p9e17_48i1x188-1x63-1x81d1x70-1x98u8x8-6x57-5x65-2x1-1x10-1x63s4x120-2x5-1x98-1x17-1x10-1x9",
@@ -38,7 +41,8 @@
       "pro": true,
       "head": "8× Dragon · 6× Rocket Balloon · 5× Dragon Rider +3",
       "spells": "Totem · Freeze · Revive · Skeleton · Earthquake · Poison",
-      "comp": "Troops: 8× Dragon, 6× Rocket Balloon, 5× Dragon Rider, 2× Archer, 1× Minion, 1× Inferno Dragon | Spells: 4× Totem, 2× Freeze, 1× Revive, 1× Skeleton, 1× Earthquake, 1× Poison"
+      "comp": "Troops: 8× Dragon, 6× Rocket Balloon, 5× Dragon Rider, 2× Archer, 1× Minion, 1× Inferno Dragon | Spells: 4× Totem, 2× Freeze, 1× Revive, 1× Skeleton, 1× Earthquake, 1× Poison | Heroes: Dragon Duke (Rocket Backpack + Flame Blower) · Angry Jelly; Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Archer Queen (Giant Arrow + Action Figure) · Frosty",
+      "equip": "Rocket Backpack · Flame Blower · Dark Orb · Meteor Staff · Eternal Tome · Healing Tome · Giant Arrow · Action Figure"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-4p4e6_13-2m1p16e34_4-6p17e43_49i1x63-1x81-2x188d1x70-1x98u5x8-2x76-20x5-5x57-2x23-1x6-2x10-3x1-1x0-3x188s2x120-3x109-2x5-1x2-1x10-1x9",
@@ -47,7 +51,8 @@
       "pro": true,
       "head": "20× Balloon · 5× Dragon · 5× Rocket Balloon +6",
       "spells": "Totem · Ice Block · Freeze · Rage · Earthquake · Poison",
-      "comp": "Troops: 5× Dragon, 2× Ice Hound, 20× Balloon, 5× Rocket Balloon, 2× Baby Dragon, 1× Wizard, 2× Minion, 3× Archer, 1× Barbarian | Siege: Sky Wagon | Spells: 2× Totem, 3× Ice Block, 2× Freeze, 1× Rage, 1× Earthquake, 1× Poison"
+      "comp": "Troops: 5× Dragon, 2× Ice Hound, 20× Balloon, 5× Rocket Balloon, 2× Baby Dragon, 1× Wizard, 2× Minion, 3× Archer, 1× Barbarian | Siege: Sky Wagon | Spells: 2× Totem, 3× Ice Block, 2× Freeze, 1× Rage, 1× Earthquake, 1× Poison | Heroes: Dragon Duke (Fire Heart + Revenge Deck) · Angry Jelly; Royal Champion (Seeking Shield + Rocket Spear) · Phoenix; Grand Warden (Healing Tome + Eternal Tome) · Sneezy; Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven",
+      "equip": "Fire Heart · Revenge Deck · Seeking Shield · Rocket Spear · Healing Tome · Eternal Tome · Dark Orb · Meteor Staff"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_53-2p16e4_34-1p9e17_48-6p4e43_49i1x81-3x5-1x188d2x10-2x5u7x81-2x23-5x57s5x120-1x9-1x17-1x70-1x98",
@@ -56,7 +61,8 @@
       "pro": true,
       "head": "7× Super Dragon · 5× Rocket Balloon · 2× Baby Dragon",
       "spells": "Totem · Poison · Skeleton · Overgrowth · Revive",
-      "comp": "Troops: 7× Super Dragon, 2× Baby Dragon, 5× Rocket Balloon | Spells: 5× Totem, 1× Poison, 1× Skeleton, 1× Overgrowth, 1× Revive"
+      "comp": "Troops: 7× Super Dragon, 2× Baby Dragon, 5× Rocket Balloon | Spells: 5× Totem, 1× Poison, 1× Skeleton, 1× Overgrowth, 1× Revive | Heroes: Dragon Duke (Fire Heart + Rocket Backpack) · Angry Jelly; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Archer Queen (Giant Arrow + Action Figure) · Frosty; Minion Prince (Dark Orb + Meteor Staff) · Phoenix",
+      "equip": "Fire Heart · Rocket Backpack · Eternal Tome · Healing Tome · Giant Arrow · Action Figure · Dark Orb · Meteor Staff"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p10e59_52-0p9e32_14-1p16e39_48-2p17e19_4i1x5-2x58-1x64-1x135-1x188d1x98-1x120-1x123u5x80-1x5-5x7-2x58-2x28-1x23-1x95-2x82-3x1-2x10-1x97-2x188-1x135s6x35-1x5-2x2",
@@ -65,7 +71,8 @@
       "pro": true,
       "head": "5× Super Bowler · 5× Healer · 3× Archer +8",
       "spells": "Invisibility · Freeze · Rage",
-      "comp": "Troops: 5× Super Bowler, 1× Balloon, 5× Healer, 2× Ice Golem, 2× Super Wall Breaker, 1× Baby Dragon, 1× Electro Titan, 2× Headhunter, 3× Archer, 2× Minion, 1× Apprentice Warden | Siege: Sky Wagon, Troop Launcher | Spells: 6× Invisibility, 1× Freeze, 2× Rage"
+      "comp": "Troops: 5× Super Bowler, 1× Balloon, 5× Healer, 2× Ice Golem, 2× Super Wall Breaker, 1× Baby Dragon, 1× Electro Titan, 2× Headhunter, 3× Archer, 2× Minion, 1× Apprentice Warden | Siege: Sky Wagon, Troop Launcher | Spells: 6× Invisibility, 1× Freeze, 2× Rage | Heroes: Dragon Duke (Electro Fangs + Fire Heart) · Spirit Fox; Barbarian King (Snake Bracelet + Spiky Ball) · Frosty; Archer Queen (Magic Mirror + Action Figure) · Sneezy; Grand Warden (Heroic Torch + Eternal Tome) · Greedy Raven",
+      "equip": "Electro Fangs · Fire Heart · Snake Bracelet · Spiky Ball · Magic Mirror · Action Figure · Heroic Torch · Eternal Tome"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p4e43_49-2m1p16e4_34-1p9e17_48-7p11e52_59i1x188-1x63-1x81d1x70-1x98u5x57-3x1-1x6-1x23-14x8-3x10s7x35-2x120-1x9-1x5",
@@ -74,7 +81,8 @@
       "pro": true,
       "head": "14× Dragon · 5× Rocket Balloon · 3× Archer +3",
       "spells": "Invisibility · Totem · Poison · Freeze",
-      "comp": "Troops: 5× Rocket Balloon, 3× Archer, 1× Wizard, 1× Baby Dragon, 14× Dragon, 3× Minion | Spells: 7× Invisibility, 2× Totem, 1× Poison, 1× Freeze"
+      "comp": "Troops: 5× Rocket Balloon, 3× Archer, 1× Wizard, 1× Baby Dragon, 14× Dragon, 3× Minion | Spells: 7× Invisibility, 2× Totem, 1× Poison, 1× Freeze | Heroes: Minion Prince (Dark Orb + Meteor Staff) · Phoenix; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Archer Queen (Giant Arrow + Action Figure) · Frosty; Dragon Duke (Fire Heart + Electro Fangs) · Angry Jelly",
+      "equip": "Dark Orb · Meteor Staff · Eternal Tome · Healing Tome · Giant Arrow · Action Figure · Fire Heart · Electro Fangs"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p4e43_49-1p9e17_48-2m1p17e4_24-7p11e52_56i2x75-1x10-1x5-4x84d2x98u10x65-4x63-5x10-1x28-1x23-2x1-1x135-1x87-1x91s8x120-1x9-1x98",
@@ -83,7 +91,8 @@
       "pro": true,
       "head": "10× Dragon Rider · 5× Minion · 4× Inferno Dragon +3",
       "spells": "Totem · Poison · Revive",
-      "comp": "Troops: 10× Dragon Rider, 4× Inferno Dragon, 5× Minion, 1× Super Wall Breaker, 1× Baby Dragon, 2× Archer | Siege: Troop Launcher, Log Launcher, Flame Flinger | Spells: 8× Totem, 1× Poison, 1× Revive"
+      "comp": "Troops: 10× Dragon Rider, 4× Inferno Dragon, 5× Minion, 1× Super Wall Breaker, 1× Baby Dragon, 2× Archer | Siege: Troop Launcher, Log Launcher, Flame Flinger | Spells: 8× Totem, 1× Poison, 1× Revive | Heroes: Minion Prince (Dark Orb + Meteor Staff) · Phoenix; Archer Queen (Giant Arrow + Action Figure) · Frosty; Grand Warden (Eternal Tome + Rage Gem) · Greedy Raven; Dragon Duke (Fire Heart + Stun Blaster) · Angry Jelly",
+      "equip": "Dark Orb · Meteor Staff · Giant Arrow · Action Figure · Eternal Tome · Rage Gem · Fire Heart · Stun Blaster"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_34-4p4e6_13-7p10e52_59i2x65-1x5-1x188d1x70-1x98u1x0-4x1-7x57-1x23-3x63-8x65-1x17-1x10-1x6s2x5-6x35-2x120-1x9",
@@ -92,7 +101,8 @@
       "pro": true,
       "head": "8× Dragon Rider · 7× Rocket Balloon · 4× Archer +6",
       "spells": "Freeze · Invisibility · Totem · Poison",
-      "comp": "Troops: 1× Barbarian, 4× Archer, 7× Rocket Balloon, 1× Baby Dragon, 3× Inferno Dragon, 8× Dragon Rider, 1× Lava Hound, 1× Minion, 1× Wizard | Spells: 2× Freeze, 6× Invisibility, 2× Totem, 1× Poison"
+      "comp": "Troops: 1× Barbarian, 4× Archer, 7× Rocket Balloon, 1× Baby Dragon, 3× Inferno Dragon, 8× Dragon Rider, 1× Lava Hound, 1× Minion, 1× Wizard | Spells: 2× Freeze, 6× Invisibility, 2× Totem, 1× Poison | Heroes: Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Royal Champion (Seeking Shield + Rocket Spear) · Phoenix; Dragon Duke (Fire Heart + Electro Fangs) · Spirit Fox",
+      "equip": "Dark Orb · Meteor Staff · Eternal Tome · Healing Tome · Seeking Shield · Rocket Spear · Fire Heart · Electro Fangs"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_24-1p9e17_48-7p4e52_59i2x65-1x5-1x188d2x98u8x8-6x65-1x76-1x10s4x120-2x5-2x70-1x9",
@@ -101,7 +111,8 @@
       "pro": false,
       "head": "8× Dragon · 6× Dragon Rider · 1× Ice Hound +1",
       "spells": "Totem · Freeze · Overgrowth · Poison",
-      "comp": "Troops: 8× Dragon, 6× Dragon Rider, 1× Ice Hound, 1× Minion | Spells: 4× Totem, 2× Freeze, 2× Overgrowth, 1× Poison"
+      "comp": "Troops: 8× Dragon, 6× Dragon Rider, 1× Ice Hound, 1× Minion | Spells: 4× Totem, 2× Freeze, 2× Overgrowth, 1× Poison | Heroes: Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Archer Queen (Giant Arrow + Action Figure) · Frosty; Dragon Duke (Fire Heart + Electro Fangs) · Phoenix",
+      "equip": "Dark Orb · Meteor Staff · Eternal Tome · Rage Gem · Giant Arrow · Action Figure · Fire Heart · Electro Fangs"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p16e43_44-1p3e48_39-2p7e19_4-7p10e59_52i1x64-1x147-2x188d2x2u2x1-2x28-1x5-5x7-1x23-1x58-6x80-1x97-1x95-1x10-1x75-1x135-1x87s6x35-2x120-1x17-1x98",
@@ -110,7 +121,8 @@
       "pro": true,
       "head": "6× Super Bowler · 5× Healer · 2× Archer +7",
       "spells": "Invisibility · Totem · Skeleton · Revive",
-      "comp": "Troops: 2× Archer, 2× Super Wall Breaker, 1× Balloon, 5× Healer, 1× Baby Dragon, 1× Ice Golem, 6× Super Bowler, 1× Apprentice Warden, 1× Electro Titan, 1× Minion | Siege: Siege Barracks, Troop Launcher, Log Launcher | Spells: 6× Invisibility, 2× Totem, 1× Skeleton, 1× Revive"
+      "comp": "Troops: 2× Archer, 2× Super Wall Breaker, 1× Balloon, 5× Healer, 1× Baby Dragon, 1× Ice Golem, 6× Super Bowler, 1× Apprentice Warden, 1× Electro Titan, 1× Minion | Siege: Siege Barracks, Troop Launcher, Log Launcher | Spells: 6× Invisibility, 2× Totem, 1× Skeleton, 1× Revive | Heroes: Minion Prince (Dark Orb + Metal Pants) · Sneezy; Archer Queen (Action Figure + Magic Mirror) · Unicorn; Grand Warden (Heroic Torch + Eternal Tome) · Poison Lizard; Dragon Duke (Electro Fangs + Fire Heart) · Spirit Fox",
+      "equip": "Dark Orb · Metal Pants · Action Figure · Magic Mirror · Heroic Torch · Eternal Tome · Electro Fangs · Fire Heart"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h2m1p16e4_24-1p9e17_48-6p11e49_43-7p10e59_52i2x65-1x5-1x188d1x98-1x17-1x120u7x57-3x63-1x17-8x65-1x23-1x6-3x1-2x10s6x35-2x120-2x5-1x9",
@@ -119,7 +131,8 @@
       "pro": true,
       "head": "8× Dragon Rider · 7× Rocket Balloon · 3× Inferno Dragon +5",
       "spells": "Invisibility · Totem · Freeze · Poison",
-      "comp": "Troops: 7× Rocket Balloon, 3× Inferno Dragon, 1× Lava Hound, 8× Dragon Rider, 1× Baby Dragon, 1× Wizard, 3× Archer, 2× Minion | Spells: 6× Invisibility, 2× Totem, 2× Freeze, 1× Poison"
+      "comp": "Troops: 7× Rocket Balloon, 3× Inferno Dragon, 1× Lava Hound, 8× Dragon Rider, 1× Baby Dragon, 1× Wizard, 3× Archer, 2× Minion | Spells: 6× Invisibility, 2× Totem, 2× Freeze, 1× Poison | Heroes: Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Archer Queen (Giant Arrow + Action Figure) · Frosty; Minion Prince (Meteor Staff + Dark Orb) · Angry Jelly; Dragon Duke (Electro Fangs + Fire Heart) · Spirit Fox",
+      "equip": "Eternal Tome · Rage Gem · Giant Arrow · Action Figure · Meteor Staff · Dark Orb · Electro Fangs · Fire Heart"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e48_17-2m1p16e4_34-6p11e49_43-4p4e6_13i1x10-1x5-1x52-1x135-4x84d4x120u5x63-10x65-3x10-1x1-1x28-1x75-1x92-1x62s1x70-7x120-1x9-1x5",
@@ -128,7 +141,8 @@
       "pro": false,
       "head": "10× Dragon Rider · 5× Inferno Dragon · 3× Minion +2",
       "spells": "Overgrowth · Totem · Poison · Freeze",
-      "comp": "Troops: 5× Inferno Dragon, 10× Dragon Rider, 3× Minion, 1× Archer, 1× Super Wall Breaker | Siege: Siege Barracks, Battle Drill, Stone Slammer | Spells: 1× Overgrowth, 7× Totem, 1× Poison, 1× Freeze"
+      "comp": "Troops: 5× Inferno Dragon, 10× Dragon Rider, 3× Minion, 1× Archer, 1× Super Wall Breaker | Siege: Siege Barracks, Battle Drill, Stone Slammer | Spells: 1× Overgrowth, 7× Totem, 1× Poison, 1× Freeze | Heroes: Archer Queen (Action Figure + Giant Arrow) · Frosty; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Minion Prince (Meteor Staff + Dark Orb) · Angry Jelly; Royal Champion (Seeking Shield + Rocket Spear) · Phoenix",
+      "equip": "Action Figure · Giant Arrow · Eternal Tome · Healing Tome · Meteor Staff · Dark Orb · Seeking Shield · Rocket Spear"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e39_48-4p10e40_13-2p16e4_24-0p4e14_32i1x177-1x58-1x135d1x70-1x2u5x7-5x177-2x82-2x5-1x58-1x97-1x28-1x23-1x6-1x1-1x10s1x5-5x35-2x120-1x9-1x53",
@@ -137,7 +151,8 @@
       "pro": false,
       "head": "5× Healer · 5× Meteor Golem · 2× Headhunter +8",
       "spells": "Freeze · Invisibility · Totem · Poison · Recall",
-      "comp": "Troops: 5× Healer, 5× Meteor Golem, 2× Headhunter, 2× Balloon, 1× Ice Golem, 1× Apprentice Warden, 1× Super Wall Breaker, 1× Baby Dragon, 1× Wizard, 1× Archer, 1× Minion | Spells: 1× Freeze, 5× Invisibility, 2× Totem, 1× Poison, 1× Recall"
+      "comp": "Troops: 5× Healer, 5× Meteor Golem, 2× Headhunter, 2× Balloon, 1× Ice Golem, 1× Apprentice Warden, 1× Super Wall Breaker, 1× Baby Dragon, 1× Wizard, 1× Archer, 1× Minion | Spells: 1× Freeze, 5× Invisibility, 2× Totem, 1× Poison, 1× Recall | Heroes: Archer Queen (Magic Mirror + Action Figure) · Frosty; Royal Champion (Electro Boots + Rocket Spear) · Spirit Fox; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Barbarian King (Spiky Ball + Snake Bracelet) · Phoenix",
+      "equip": "Magic Mirror · Action Figure · Electro Boots · Rocket Spear · Eternal Tome · Rage Gem · Spiky Ball · Snake Bracelet"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-7p4e52_53-2p16e24_22-0p10e14_51i1x10-1x5-1x75-1x91-4x84d4x10u5x7-1x23-4x5-3x82-3x28-1x58-2x150-5x10-17x57-1x1-1x135-1x87-1x75s1x98-1x2-4x35-1x9-2x120",
@@ -146,7 +161,8 @@
       "pro": true,
       "head": "17× Rocket Balloon · 5× Healer · 5× Minion +7",
       "spells": "Revive · Rage · Invisibility · Poison · Totem",
-      "comp": "Troops: 5× Healer, 1× Baby Dragon, 4× Balloon, 3× Headhunter, 3× Super Wall Breaker, 1× Ice Golem, 2× Furnace, 5× Minion, 17× Rocket Balloon, 1× Archer | Siege: Troop Launcher, Log Launcher, Siege Barracks | Spells: 1× Revive, 1× Rage, 4× Invisibility, 1× Poison, 2× Totem"
+      "comp": "Troops: 5× Healer, 1× Baby Dragon, 4× Balloon, 3× Headhunter, 3× Super Wall Breaker, 1× Ice Golem, 2× Furnace, 5× Minion, 17× Rocket Balloon, 1× Archer | Siege: Troop Launcher, Log Launcher, Siege Barracks | Spells: 1× Revive, 1× Rage, 4× Invisibility, 1× Poison, 2× Totem | Heroes: Archer Queen (Giant Arrow + Action Figure) · Frosty; Dragon Duke (Fire Heart + Rocket Backpack) · Phoenix; Grand Warden (Rage Gem + Fireball) · Sneezy; Barbarian King (Spiky Ball + Stick Horse) · Spirit Fox",
+      "equip": "Giant Arrow · Action Figure · Fire Heart · Rocket Backpack · Rage Gem · Fireball · Spiky Ball · Stick Horse"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-6p17e43_49-2m1p16e4_24-7p4e53_52i1x59-1x65-1x188d2x98u10x59-8x5-1x23-1x10-1x62-1x52-1x75s1x2-1x70-6x120-1x5",
@@ -155,7 +171,8 @@
       "pro": false,
       "head": "10× Electro Dragon · 8× Balloon · 1× Baby Dragon +1",
       "spells": "Rage · Overgrowth · Totem · Freeze",
-      "comp": "Troops: 10× Electro Dragon, 8× Balloon, 1× Baby Dragon, 1× Minion | Siege: Stone Slammer, Battle Blimp, Siege Barracks | Spells: 1× Rage, 1× Overgrowth, 6× Totem, 1× Freeze"
+      "comp": "Troops: 10× Electro Dragon, 8× Balloon, 1× Baby Dragon, 1× Minion | Siege: Stone Slammer, Battle Blimp, Siege Barracks | Spells: 1× Rage, 1× Overgrowth, 6× Totem, 1× Freeze | Heroes: Archer Queen (Giant Arrow + Action Figure) · Frosty; Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Dragon Duke (Rocket Backpack + Fire Heart) · Phoenix",
+      "equip": "Giant Arrow · Action Figure · Dark Orb · Meteor Staff · Eternal Tome · Rage Gem · Rocket Backpack · Fire Heart"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-2p16e4_34-6p4e43_49-7p11e52_53i3x63-2x5-1x188d1x70-1x98u2x0-4x1-4x57-1x23-3x63-9x65-1x17-2x10-1x75-1x87-1x91s2x5-3x120-1x9-4x10-1x17",
@@ -164,7 +181,8 @@
       "pro": true,
       "head": "9× Dragon Rider · 4× Archer · 4× Rocket Balloon +5",
       "spells": "Freeze · Totem · Poison · Earthquake · Skeleton",
-      "comp": "Troops: 2× Barbarian, 4× Archer, 4× Rocket Balloon, 1× Baby Dragon, 3× Inferno Dragon, 9× Dragon Rider, 1× Lava Hound, 2× Minion | Siege: Siege Barracks, Log Launcher, Flame Flinger | Spells: 2× Freeze, 3× Totem, 1× Poison, 4× Earthquake, 1× Skeleton"
+      "comp": "Troops: 2× Barbarian, 4× Archer, 4× Rocket Balloon, 1× Baby Dragon, 3× Inferno Dragon, 9× Dragon Rider, 1× Lava Hound, 2× Minion | Siege: Siege Barracks, Log Launcher, Flame Flinger | Spells: 2× Freeze, 3× Totem, 1× Poison, 4× Earthquake, 1× Skeleton | Heroes: Archer Queen (Giant Arrow + Action Figure) · Frosty; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Minion Prince (Dark Orb + Meteor Staff) · Phoenix; Dragon Duke (Fire Heart + Rocket Backpack) · Angry Jelly",
+      "equip": "Giant Arrow · Action Figure · Eternal Tome · Healing Tome · Dark Orb · Meteor Staff · Fire Heart · Rocket Backpack"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-2m1p16e4_24-0p4e14_51-7p11e52_53i1x10-1x5-4x84-1x75-1x91d2x98u8x59-1x23-4x5-2x6-3x10-7x57-1x87-1x75-1x135s3x120-4x10-2x2",
@@ -173,7 +191,8 @@
       "pro": true,
       "head": "8× Electro Dragon · 7× Rocket Balloon · 4× Balloon +3",
       "spells": "Totem · Earthquake · Rage",
-      "comp": "Troops: 8× Electro Dragon, 1× Baby Dragon, 4× Balloon, 2× Wizard, 3× Minion, 7× Rocket Balloon | Siege: Log Launcher, Siege Barracks, Troop Launcher | Spells: 3× Totem, 4× Earthquake, 2× Rage"
+      "comp": "Troops: 8× Electro Dragon, 1× Baby Dragon, 4× Balloon, 2× Wizard, 3× Minion, 7× Rocket Balloon | Siege: Log Launcher, Siege Barracks, Troop Launcher | Spells: 3× Totem, 4× Earthquake, 2× Rage | Heroes: Archer Queen (Giant Arrow + Action Figure) · Frosty; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Barbarian King (Spiky Ball + Stick Horse) · Phoenix; Dragon Duke (Fire Heart + Rocket Backpack) · Angry Jelly",
+      "equip": "Giant Arrow · Action Figure · Eternal Tome · Rage Gem · Spiky Ball · Stick Horse · Fire Heart · Rocket Backpack"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p17e16_48-0p9e14_32-2p7e4_19-7p10e52_59i1x147-1x64-1x188d1x9-1x17-1x53u1x1-3x28-3x5-2x6-5x7-1x23-2x58-1x82-1x97-5x80-1x123-1x10-1x62-1x52-1x75s3x35-2x120-3x2",
@@ -182,7 +201,8 @@
       "pro": false,
       "head": "5× Healer · 5× Super Bowler · 3× Super Wall Breaker +9",
       "spells": "Invisibility · Totem · Rage",
-      "comp": "Troops: 1× Archer, 3× Super Wall Breaker, 3× Balloon, 2× Wizard, 5× Healer, 1× Baby Dragon, 2× Ice Golem, 1× Headhunter, 1× Apprentice Warden, 5× Super Bowler, 1× Druid, 1× Minion | Siege: Stone Slammer, Battle Blimp, Siege Barracks | Spells: 3× Invisibility, 2× Totem, 3× Rage"
+      "comp": "Troops: 1× Archer, 3× Super Wall Breaker, 3× Balloon, 2× Wizard, 5× Healer, 1× Baby Dragon, 2× Ice Golem, 1× Headhunter, 1× Apprentice Warden, 5× Super Bowler, 1× Druid, 1× Minion | Siege: Stone Slammer, Battle Blimp, Siege Barracks | Spells: 3× Invisibility, 2× Totem, 3× Rage | Heroes: Archer Queen (Monolith Arrow + Action Figure) · Greedy Raven; Barbarian King (Spiky Ball + Snake Bracelet) · Frosty; Grand Warden (Eternal Tome + Heroic Torch) · Poison Lizard; Dragon Duke (Fire Heart + Electro Fangs) · Spirit Fox",
+      "equip": "Monolith Arrow · Action Figure · Spiky Ball · Snake Bracelet · Eternal Tome · Heroic Torch · Fire Heart · Electro Fangs"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e32_14-1p3e48_17-2p8e24_34-4p10e40_50i1x58-1x177-1x51-1x87d1x5-1x9-2x10u6x177-1x97-1x58-1x28-1x82-3x1-3x123-1x87-1x51-1x75s1x70-7x120-1x35-1x17",
@@ -191,7 +211,8 @@
       "pro": false,
       "head": "6× Meteor Golem · 3× Archer · 3× Druid +4",
       "spells": "Overgrowth · Totem · Invisibility · Skeleton",
-      "comp": "Troops: 6× Meteor Golem, 1× Apprentice Warden, 1× Ice Golem, 1× Super Wall Breaker, 1× Headhunter, 3× Archer, 3× Druid | Siege: Log Launcher, Wall Wrecker, Siege Barracks | Spells: 1× Overgrowth, 7× Totem, 1× Invisibility, 1× Skeleton"
+      "comp": "Troops: 6× Meteor Golem, 1× Apprentice Warden, 1× Ice Golem, 1× Super Wall Breaker, 1× Headhunter, 3× Archer, 3× Druid | Siege: Log Launcher, Wall Wrecker, Siege Barracks | Spells: 1× Overgrowth, 7× Totem, 1× Invisibility, 1× Skeleton | Heroes: Barbarian King (Snake Bracelet + Spiky Ball) · Frosty; Archer Queen (Action Figure + Giant Arrow) · Unicorn; Grand Warden (Rage Gem + Healing Tome) · Diggy; Royal Champion (Electro Boots + Frost Flake) · Spirit Fox",
+      "equip": "Snake Bracelet · Spiky Ball · Action Figure · Giant Arrow · Rage Gem · Healing Tome · Electro Boots · Frost Flake"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e32_14-1p3e39_48-2p16e5_24-4p10e13_40i1x110-1x132-3x5-2x87-2x10d1x9-1x17-1x70u13x132-5x7-4x5-2x1-1x28-2x57-1x123-1x135-1x87-1x52s9x120-1x70",
@@ -200,7 +221,8 @@
       "pro": false,
       "head": "13× Thrower · 5× Healer · 4× Balloon +4",
       "spells": "Totem · Overgrowth",
-      "comp": "Troops: 13× Thrower, 5× Healer, 4× Balloon, 2× Archer, 1× Super Wall Breaker, 2× Rocket Balloon, 1× Druid | Siege: Troop Launcher, Log Launcher, Battle Blimp | Spells: 9× Totem, 1× Overgrowth"
+      "comp": "Troops: 13× Thrower, 5× Healer, 4× Balloon, 2× Archer, 1× Super Wall Breaker, 2× Rocket Balloon, 1× Druid | Siege: Troop Launcher, Log Launcher, Battle Blimp | Spells: 9× Totem, 1× Overgrowth | Heroes: Barbarian King (Snake Bracelet + Spiky Ball) · Frosty; Archer Queen (Magic Mirror + Action Figure) · Unicorn; Grand Warden (Life Gem + Rage Gem) · Sneezy; Royal Champion (Rocket Spear + Electro Boots) · Spirit Fox",
+      "equip": "Snake Bracelet · Spiky Ball · Magic Mirror · Action Figure · Life Gem · Rage Gem · Rocket Spear · Electro Boots"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e14_32-1p3e48_39-2p16e5_24-7p4e53_52i1x147-1x64-1x188-1x87d3x0-1x10u2x5-2x1-5x7-2x28-2x58-2x82-11x132-4x26-1x123-1x91-1x135-1x188s4x120-1x9-1x35-1x5-1x70-1x98",
@@ -209,7 +231,8 @@
       "pro": false,
       "head": "11× Thrower · 5× Healer · 4× Super Barbarian +6",
       "spells": "Totem · Poison · Invisibility · Freeze · Overgrowth · Revive",
-      "comp": "Troops: 2× Balloon, 2× Archer, 5× Healer, 2× Super Wall Breaker, 2× Ice Golem, 2× Headhunter, 11× Thrower, 4× Super Barbarian, 1× Druid | Siege: Flame Flinger, Troop Launcher, Sky Wagon | Spells: 4× Totem, 1× Poison, 1× Invisibility, 1× Freeze, 1× Overgrowth, 1× Revive"
+      "comp": "Troops: 2× Balloon, 2× Archer, 5× Healer, 2× Super Wall Breaker, 2× Ice Golem, 2× Headhunter, 11× Thrower, 4× Super Barbarian, 1× Druid | Siege: Flame Flinger, Troop Launcher, Sky Wagon | Spells: 4× Totem, 1× Poison, 1× Invisibility, 1× Freeze, 1× Overgrowth, 1× Revive | Heroes: Barbarian King (Spiky Ball + Snake Bracelet) · Frosty; Archer Queen (Action Figure + Magic Mirror) · Unicorn; Grand Warden (Life Gem + Rage Gem) · Sneezy; Dragon Duke (Rocket Backpack + Fire Heart) · Phoenix",
+      "equip": "Spiky Ball · Snake Bracelet · Action Figure · Magic Mirror · Life Gem · Rage Gem · Rocket Backpack · Fire Heart"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p4e51_10-1p16e17_48-2p8e4_24-4p10e40_13i1x87-2x10-3x5-2x53-1x135d1x2-1x9-1x17u4x1-5x26-5x4-1x23-2x82-4x57-3x5-5x7-2x132-4x110-1x97-2x58-1x135-1x91-1x87s6x35-1x53-1x120-1x70",
@@ -218,7 +241,8 @@
       "pro": true,
       "head": "5× Super Barbarian · 5× Wall Breaker · 5× Healer +9",
       "spells": "Invisibility · Recall · Totem · Overgrowth",
-      "comp": "Troops: 4× Archer, 5× Super Barbarian, 5× Wall Breaker, 1× Baby Dragon, 2× Headhunter, 4× Rocket Balloon, 3× Balloon, 5× Healer, 2× Thrower, 4× Root Rider, 1× Apprentice Warden, 2× Ice Golem | Siege: Troop Launcher, Flame Flinger, Log Launcher | Spells: 6× Invisibility, 1× Recall, 1× Totem, 1× Overgrowth"
+      "comp": "Troops: 4× Archer, 5× Super Barbarian, 5× Wall Breaker, 1× Baby Dragon, 2× Headhunter, 4× Rocket Balloon, 3× Balloon, 5× Healer, 2× Thrower, 4× Root Rider, 1× Apprentice Warden, 2× Ice Golem | Siege: Troop Launcher, Flame Flinger, Log Launcher | Spells: 6× Invisibility, 1× Recall, 1× Totem, 1× Overgrowth | Heroes: Barbarian King (Stick Horse + Giant Gauntlet) · Phoenix; Archer Queen (Giant Arrow + Action Figure) · Sneezy; Grand Warden (Eternal Tome + Rage Gem) · Diggy; Royal Champion (Electro Boots + Rocket Spear) · Spirit Fox",
+      "equip": "Stick Horse · Giant Gauntlet · Giant Arrow · Action Figure · Eternal Tome · Rage Gem · Electro Boots · Rocket Spear"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p4e14_8-1p9e17_48-2p16e4_24-4p10e40_13i1x75-2x10-3x5-2x57-1x110-1x135d1x9-1x120-1x53u5x7-3x5-5x110-2x82-4x1-6x132-2x2-1x97-3x10-1x58-1x75-1x91-1x135s1x2-1x70-6x35-1x120",
@@ -227,7 +251,8 @@
       "pro": true,
       "head": "6× Thrower · 5× Healer · 5× Root Rider +7",
       "spells": "Rage · Overgrowth · Invisibility · Totem",
-      "comp": "Troops: 5× Healer, 3× Balloon, 5× Root Rider, 2× Headhunter, 4× Archer, 6× Thrower, 2× Goblin, 1× Apprentice Warden, 3× Minion, 1× Ice Golem | Siege: Siege Barracks, Flame Flinger, Troop Launcher | Spells: 1× Rage, 1× Overgrowth, 6× Invisibility, 1× Totem"
+      "comp": "Troops: 5× Healer, 3× Balloon, 5× Root Rider, 2× Headhunter, 4× Archer, 6× Thrower, 2× Goblin, 1× Apprentice Warden, 3× Minion, 1× Ice Golem | Siege: Siege Barracks, Flame Flinger, Troop Launcher | Spells: 1× Rage, 1× Overgrowth, 6× Invisibility, 1× Totem | Heroes: Barbarian King (Spiky Ball + Earthquake Boots) · Phoenix; Archer Queen (Giant Arrow + Action Figure) · Frosty; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Royal Champion (Electro Boots + Rocket Spear) · Spirit Fox",
+      "equip": "Spiky Ball · Earthquake Boots · Giant Arrow · Action Figure · Eternal Tome · Rage Gem · Electro Boots · Rocket Spear"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p11e10_51-1p9e48_17-2m1p16e4_34-6p4e49_43i4x84-2x75-1x10-1x5d2x2u7x59-3x81-1x23-1x87-1x91-1x75s1x5-10x120",
@@ -236,7 +261,8 @@
       "pro": true,
       "head": "7× Electro Dragon · 3× Super Dragon · 1× Baby Dragon",
       "spells": "Freeze · Totem",
-      "comp": "Troops: 7× Electro Dragon, 3× Super Dragon, 1× Baby Dragon | Siege: Log Launcher, Flame Flinger, Siege Barracks | Spells: 1× Freeze, 10× Totem"
+      "comp": "Troops: 7× Electro Dragon, 3× Super Dragon, 1× Baby Dragon | Siege: Log Launcher, Flame Flinger, Siege Barracks | Spells: 1× Freeze, 10× Totem | Heroes: Barbarian King (Giant Gauntlet + Stick Horse) · Angry Jelly; Archer Queen (Action Figure + Giant Arrow) · Frosty; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Minion Prince (Meteor Staff + Dark Orb) · Phoenix",
+      "equip": "Giant Gauntlet · Stick Horse · Action Figure · Giant Arrow · Eternal Tome · Healing Tome · Meteor Staff · Dark Orb"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p10e32_14-1p9e48_17-2m1p16e4_34-6p4e49_43i4x84-2x75-1x10-1x5d2x2u4x57-10x59-1x28-1x87-1x91-1x75s1x5-10x120",
@@ -245,7 +271,8 @@
       "pro": false,
       "head": "10× Electro Dragon · 4× Rocket Balloon · 1× Super Wall Breaker",
       "spells": "Freeze · Totem",
-      "comp": "Troops: 4× Rocket Balloon, 10× Electro Dragon, 1× Super Wall Breaker | Siege: Log Launcher, Flame Flinger, Siege Barracks | Spells: 1× Freeze, 10× Totem"
+      "comp": "Troops: 4× Rocket Balloon, 10× Electro Dragon, 1× Super Wall Breaker | Siege: Log Launcher, Flame Flinger, Siege Barracks | Spells: 1× Freeze, 10× Totem | Heroes: Barbarian King (Snake Bracelet + Spiky Ball) · Spirit Fox; Archer Queen (Action Figure + Giant Arrow) · Frosty; Grand Warden (Eternal Tome + Healing Tome) · Sneezy; Minion Prince (Meteor Staff + Dark Orb) · Phoenix",
+      "equip": "Snake Bracelet · Spiky Ball · Action Figure · Giant Arrow · Eternal Tome · Healing Tome · Meteor Staff · Dark Orb"
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p10e14_32-1p9e48_39-2p16e5_24-4p4e13_40i1x64-1x87-1x147d1x98-2x120u5x7-7x147-2x5-3x10-1x28-1x1-1x52-1x135-1x87s6x0-2x10-2x120-1x9",
@@ -254,7 +281,8 @@
       "pro": true,
       "head": "7× Super Yeti · 5× Healer · 3× Minion +3",
       "spells": "Lightning · Earthquake · Totem · Poison",
-      "comp": "Troops: 5× Healer, 7× Super Yeti, 2× Balloon, 3× Minion, 1× Super Wall Breaker, 1× Archer | Siege: Battle Blimp, Troop Launcher, Log Launcher | Spells: 6× Lightning, 2× Earthquake, 2× Totem, 1× Poison"
+      "comp": "Troops: 5× Healer, 7× Super Yeti, 2× Balloon, 3× Minion, 1× Super Wall Breaker, 1× Archer | Siege: Battle Blimp, Troop Launcher, Log Launcher | Spells: 6× Lightning, 2× Earthquake, 2× Totem, 1× Poison | Heroes: Barbarian King (Spiky Ball + Snake Bracelet) · Spirit Fox; Archer Queen (Action Figure + Magic Mirror) · Frosty; Grand Warden (Life Gem + Rage Gem) · Sneezy; Royal Champion (Rocket Spear + Electro Boots) · Phoenix",
+      "equip": "Spiky Ball · Snake Bracelet · Action Figure · Magic Mirror · Life Gem · Rage Gem · Rocket Spear · Electro Boots"
     }
   ],
   "bases": [

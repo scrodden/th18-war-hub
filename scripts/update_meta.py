@@ -67,6 +67,11 @@ GAMEDATA_URL = "https://raw.githubusercontent.com/NinjaInShade/clash-armies/HEAD
 _TROOPS = {0: "Barbarian", 1: "Archer", 2: "Goblin", 3: "Giant", 4: "Wall Breaker", 5: "Balloon", 6: "Wizard", 7: "Healer", 8: "Dragon", 9: "P.E.K.K.A", 10: "Minion", 11: "Hog Rider", 12: "Valkyrie", 13: "Golem", 15: "Witch", 17: "Lava Hound", 22: "Bowler", 23: "Baby Dragon", 24: "Miner", 26: "Super Barbarian", 27: "Super Archer", 28: "Super Wall Breaker", 29: "Super Giant", 53: "Yeti", 55: "Sneaky Goblin", 56: "Super Miner", 57: "Rocket Balloon", 58: "Ice Golem", 59: "Electro Dragon", 63: "Inferno Dragon", 64: "Super Valkyrie", 65: "Dragon Rider", 66: "Super Witch", 76: "Ice Hound", 80: "Super Bowler", 81: "Super Dragon", 82: "Headhunter", 83: "Super Wizard", 84: "Super Minion", 95: "Electro Titan", 97: "Apprentice Warden", 98: "Super Hog Rider", 109: "Ruin Witch", 110: "Root Rider", 123: "Druid", 132: "Thrower", 147: "Super Yeti", 150: "Furnace", 177: "Meteor Golem"}
 _SPELLS = {0: "Lightning", 1: "Healing", 2: "Rage", 3: "Jump", 5: "Freeze", 9: "Poison", 10: "Earthquake", 11: "Haste", 16: "Clone", 17: "Skeleton", 28: "Bat", 35: "Invisibility", 53: "Recall", 70: "Overgrowth", 98: "Revive", 109: "Ice Block", 120: "Totem", 123: "Angry Spell"}
 _SIEGES = {51: "Wall Wrecker", 52: "Battle Blimp", 62: "Stone Slammer", 75: "Siege Barracks", 87: "Log Launcher", 91: "Flame Flinger", 92: "Battle Drill", 135: "Troop Launcher", 188: "Sky Wagon"}
+_HEROES = {0: "Barbarian King", 1: "Archer Queen", 2: "Grand Warden", 4: "Royal Champion", 6: "Minion Prince", 7: "Dragon Duke"}
+_PETS = {0: "Lassi", 1: "Mighty Yak", 2: "Electro Owl", 3: "Unicorn", 4: "Phoenix", 7: "Poison Lizard", 8: "Diggy", 9: "Frosty", 10: "Spirit Fox", 11: "Angry Jelly", 16: "Sneezy", 17: "Greedy Raven"}
+_EQUIP = {0: "Barbarian Puppet", 1: "Rage Vial", 2: "Archer Puppet", 3: "Invisibility Vial", 4: "Eternal Tome", 5: "Life Gem", 6: "Seeking Shield", 7: "Royal Gem", 8: "Earthquake Boots", 9: "Hog Rider Doll", 10: "Giant Gauntlet", 11: "Vampstache", 12: "Haste Vial", 13: "Rocket Spear", 14: "Spiky Ball", 15: "Frozen Arrow", 16: "Monolith Arrow", 17: "Giant Arrow", 19: "Heroic Torch", 20: "Healer Puppet", 22: "Fireball", 24: "Rage Gem", 32: "Snake Bracelet", 34: "Healing Tome", 35: "Dark Crown", 39: "Magic Mirror", 40: "Electro Boots", 41: "Lavaloon Puppet", 42: "Henchmen Puppet", 43: "Dark Orb", 44: "Metal Pants", 47: "Noble Iron", 48: "Action Figure", 49: "Meteor Staff", 50: "Frost Flake", 51: "Stick Horse", 52: "Fire Heart", 53: "Rocket Backpack", 56: "Stun Blaster", 57: "Flame Blower", 59: "Electro Fangs", 60: "Revenge Deck"}
+_HERO_RE = re.compile(r"h([0-9pem_\-]+)")
+_HERO_ONE_RE = re.compile(r"(\d+)(?:m\d+)?(?:p(\d+))?(?:e(\d+)(?:_(\d+))?)?")
 
 _SECTION_RE = re.compile(r"^\t(\w+):\s*\[")
 _NAME_RE = re.compile(r"name:\s*'([^']+)'")
@@ -76,8 +81,8 @@ _SEG_RE = re.compile(r"([idus])((?:\d+x\d+-?)+)")
 
 
 def parse_gamedata(text):
-    """Parse clash-armies game-data.json5 into troops/spells/sieges clashId maps."""
-    out = {"troops": {}, "spells": {}, "sieges": {}}
+    """Parse clash-armies game-data.json5 into clashId->name maps for each section."""
+    out = {k: {} for k in ("troops", "spells", "sieges", "heroes", "pets", "equipment")}
     cur = None
     curname = None
     for ln in text.split("\n"):
@@ -95,25 +100,30 @@ def parse_gamedata(text):
             if idm and curname is not None:
                 out[cur][int(idm.group(1))] = curname
                 curname = None
-    return out["troops"], out["spells"], out["sieges"]
+    return out
 
 
 def load_unit_maps():
+    embedded = {"troops": dict(_TROOPS), "spells": dict(_SPELLS), "sieges": dict(_SIEGES),
+                "heroes": dict(_HEROES), "pets": dict(_PETS), "equipment": dict(_EQUIP)}
     try:
-        t, s, g = parse_gamedata(fetch(GAMEDATA_URL, timeout=25))
-        if len(t) >= 10 and len(s) >= 5:
-            return t, s, g, "live"
+        m = parse_gamedata(fetch(GAMEDATA_URL, timeout=25))
+        if len(m["troops"]) >= 10 and len(m["spells"]) >= 5 and len(m["equipment"]) >= 10:
+            return m, "live"
     except Exception:
         pass
-    return dict(_TROOPS), dict(_SPELLS), dict(_SIEGES), "embedded"
+    return embedded, "embedded"
 
 
-def decode_army(url, troops, spells, sieges):
-    """Return {head, spells, comp} describing an army link's composition, or None."""
+def decode_army(url, maps):
+    """Return {head, spells, equip, comp} describing an army link, or None."""
     m = re.search(r"army=([^&\s\"']+)", url)
     if not m:
         return None
-    segs = dict(_SEG_RE.findall(m.group(1)))
+    army = m.group(1)
+    troops, spells, sieges = maps["troops"], maps["spells"], maps["sieges"]
+    heroes_m, pets_m, equip_m = maps["heroes"], maps["pets"], maps["equipment"]
+    segs = dict(_SEG_RE.findall(army))
 
     def pairs(seg):
         return [(int(a), int(i)) for a, i in _UNIT_RE.findall(seg or "")]
@@ -128,7 +138,31 @@ def decode_army(url, troops, spells, sieges):
             troop_list.append((amt, "#" + str(cid)))
     spell_list = [(amt, spells.get(cid, "#" + str(cid))) for amt, cid in pairs(segs.get("s"))]
 
-    if not troop_list and not spell_list:
+    # heroes + equipment (from the leading h... segment)
+    hero_entries, equip_names = [], []
+    hm = _HERO_RE.search(army)
+    if hm:
+        for part in hm.group(1).split("-"):
+            hp = _HERO_ONE_RE.match(part or "")
+            if not hp:
+                continue
+            hid, pid, e1, e2 = hp.groups()
+            hname = heroes_m.get(int(hid))
+            if not hname:
+                continue
+            eqs = []
+            for e in (e1, e2):
+                if e is not None:
+                    en = equip_m.get(int(e), "#" + e)
+                    eqs.append(en)
+                    if en not in equip_names:
+                        equip_names.append(en)
+            label = hname + (" (" + " + ".join(eqs) + ")" if eqs else "")
+            if pid is not None and pets_m.get(int(pid)):
+                label += " · " + pets_m[int(pid)]
+            hero_entries.append(label)
+
+    if not troop_list and not spell_list and not hero_entries:
         return None
 
     top = sorted(troop_list, key=lambda x: -x[0])
@@ -136,12 +170,12 @@ def decode_army(url, troops, spells, sieges):
     if len(top) > 3:
         head += " +%d" % (len(top) - 3)
 
-    # unique spell names, order preserved
     seen = []
     for _, n in spell_list:
         if n not in seen:
             seen.append(n)
     spells_str = " · ".join(seen)
+    equip_str = " · ".join(equip_names)
 
     parts = []
     if troop_list:
@@ -150,7 +184,9 @@ def decode_army(url, troops, spells, sieges):
         parts.append("Siege: " + ", ".join(n for _, n in siege_list))
     if spell_list:
         parts.append("Spells: " + ", ".join("%d× %s" % (a, n) for a, n in spell_list))
-    return {"head": head, "spells": spells_str, "comp": " | ".join(parts)}
+    if hero_entries:
+        parts.append("Heroes: " + "; ".join(hero_entries))
+    return {"head": head, "spells": spells_str, "equip": equip_str, "comp": " | ".join(parts)}
 
 
 def fetch(url, timeout=25):
@@ -269,12 +305,15 @@ def main():
     pro_bases = sum(1 for x in fin_bases if x.get("pro"))
 
     # Decode each army link into a readable composition (troops + spells).
-    troops_m, spells_m, sieges_m, maps_src = load_unit_maps()
+    maps, maps_src = load_unit_maps()
     decoded = 0
     for a in fin_armies:
-        info = decode_army(a["url"], troops_m, spells_m, sieges_m)
+        info = decode_army(a["url"], maps)
         if info:
-            a["head"], a["spells"], a["comp"] = info["head"], info["spells"], info["comp"]
+            a["head"] = info["head"]
+            a["spells"] = info["spells"]
+            a["equip"] = info["equip"]
+            a["comp"] = info["comp"]
             decoded += 1
 
     out = {
