@@ -61,6 +61,26 @@ The Clash of Clans meta shifts with every balance patch. To update:
 
 ---
 
+## Weekly auto-updater (GitHub Actions)
+
+`.github/workflows/weekly-meta-update.yml` runs every **Tuesday 13:00 UTC** (and on-demand via the Actions tab).
+It runs `scripts/update_meta.py`, which scrapes community pages for `CopyArmy` / `OpenLayout` links, merges them
+into `data/latest.json` (keeping each link's first-seen date), then commits & pushes so Pages redeploys. The site's
+"Fresh this week" sections render that file.
+
+The script has **two source lanes**, both edited at the top of `scripts/update_meta.py`:
+
+- `SOURCES` — general community pages → the **🔥 Community fresh** grid.
+- `PRO_SOURCES` — curated top-tier / pro / CWL pages → links get `pro: true` and show under **🏆 Pro / tournament
+  picks** with a gold **PRO** badge.
+
+To add a source, drop its URL into the right list. Dead or paywalled sources are skipped automatically (they never
+fail the run). Note: base layouts and army comps are **not** in the official Supercell API, so "pro" means
+community-curated top-tier picks from public pages — see the *Study the Pros* section on the site's home page.
+
+> GitHub disables scheduled workflows after ~60 days of **no repo activity**. The weekly commits normally keep it
+> awake; if it ever pauses, open the Actions tab and hit **Run workflow** once to re-arm it.
+
 ## Credits & disclaimer
 
 Unofficial fan project. **Clash of Clans is a trademark of Supercell**; this site is not affiliated with or endorsed

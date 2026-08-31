@@ -66,6 +66,8 @@
   "use strict";
   var armyEl = document.getElementById("fresh-armies");
   var baseEl = document.getElementById("fresh-bases");
+  var proArmyEl = document.getElementById("pro-armies");
+  var proBaseEl = document.getElementById("pro-bases");
   if (!armyEl && !baseEl) return;
 
   function esc(s) {
@@ -78,7 +80,12 @@
     var d = new Date(firstSeen + "T00:00:00Z");
     return !isNaN(d) && (Date.now() - d.getTime()) < 8 * 864e5; // within 8 days
   }
-  function newTag(it) { return isNew(it.first_seen) ? '<span class="tag-new">NEW</span>' : ""; }
+  function badges(it) {
+    var b = "";
+    if (it.pro) b += '<span class="tag-pro">PRO</span>';
+    if (isNew(it.first_seen)) b += '<span class="tag-new">NEW</span>';
+    return b ? '<span class="badges">' + b + "</span>" : "";
+  }
 
   function baseLabel(it) {
     var t = (it.type || "").toUpperCase();
@@ -89,17 +96,17 @@
   var LIMIT = 12;
 
   function renderList(el, items, ico, labelFn) {
+    if (!el) return;
     if (!items || !items.length) {
       el.innerHTML = '<p class="fresh-empty">No links yet — check back after the next Tuesday refresh.</p>';
       return;
     }
-    var shown = items.slice(0, LIMIT);
-    el.innerHTML = shown.map(function (it) {
+    el.innerHTML = items.slice(0, LIMIT).map(function (it) {
       return '<a class="fresh-item" href="' + esc(it.url) + '" rel="nofollow">' +
         '<span class="ic">' + ico + '</span>' +
         '<span class="txt">' + esc(labelFn(it)) +
         '<span class="src">' + esc(it.source || "") + '</span></span>' +
-        newTag(it) + "</a>";
+        badges(it) + "</a>";
     }).join("");
     if (items.length > LIMIT) {
       var more = document.createElement("p");
@@ -109,13 +116,27 @@
     }
   }
 
+  function split(items) {
+    items = items || [];
+    return { pro: items.filter(function (x) { return x.pro; }),
+             rest: items.filter(function (x) { return !x.pro; }) };
+  }
+  function hideBlockIfEmpty(el, n) {
+    var block = el && el.closest("[data-pro-block]");
+    if (block && !n) block.style.display = "none";
+  }
+  var armyLabel = function () { return "Copy army"; };
+
   fetch("data/latest.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("no data"); return r.json(); })
     .then(function (data) {
       var d = (data.updated || "").slice(0, 10);
       document.querySelectorAll("[data-fresh-date]").forEach(function (e) { e.textContent = d || "—"; });
-      if (armyEl) renderList(armyEl, data.armies, "⚔️", function () { return "Copy army"; });
-      if (baseEl) renderList(baseEl, data.bases, "🛡️", baseLabel);
+      var a = split(data.armies), b = split(data.bases);
+      if (proArmyEl) { renderList(proArmyEl, a.pro, "⚔️", armyLabel); hideBlockIfEmpty(proArmyEl, a.pro.length); }
+      renderList(armyEl, a.rest, "⚔️", armyLabel);
+      if (proBaseEl) { renderList(proBaseEl, b.pro, "🛡️", baseLabel); hideBlockIfEmpty(proBaseEl, b.pro.length); }
+      renderList(baseEl, b.rest, "🛡️", baseLabel);
     })
     .catch(function () {
       document.querySelectorAll("[data-fresh-fallback]").forEach(function (n) { n.style.display = "block"; });

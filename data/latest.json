@@ -1,112 +1,175 @@
 {
-  "updated": "2026-08-31T21:51:12Z",
-  "sources_ok": 8,
+  "updated": "2026-08-31T21:59:57Z",
+  "sources_ok": 11,
   "sources_failed": [],
   "armies": [
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p4e59_60-6p11e49_43-2m1p16e4_24-4p10e13_6i2x10-3x5-2x53-1x135-1x188d2x98u6x5-1x53-2x6-1x23-4x1-1x10-9x8-4x65-1x87-1x92-1x188s4x109-1x2-1x9-1x70-2x120",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p4e52_53-1p17e48_17-2m1p16e34_4-6p11e43_49i1x10-1x5-4x84-1x75d2x98u8x65-5x63-5x57-1x23-2x6-3x10-1x1-1x135-1x91-1x75s5x120-1x5-1x9-4x10",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e57_53-1p9e17_48-2p16e5_24-4p4e13_6i1x64-1x147-1x87d1x98-2x10u5x7-11x132-1x58-1x82-1x123-4x26-2x1-3x4-2x28-1x23-3x5s3x0-3x120-1x9-1x70-1x17-1x5",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e53_57-6p17e43_49-2m1p16e4_34-1p9e17_48i1x188-1x63-1x81d1x70-1x98u8x8-6x57-5x65-2x1-1x10-1x63s4x120-2x5-1x98-1x17-1x10-1x9",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-4p4e6_13-2m1p16e34_4-6p17e43_49i1x63-1x81-2x188d1x70-1x98u5x8-2x76-20x5-5x57-2x23-1x6-2x10-3x1-1x0-3x188s2x120-3x109-2x5-1x2-1x10-1x9",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_53-2p16e4_34-1p9e17_48-6p4e43_49i1x81-3x5-1x188d2x10-2x5u7x81-2x23-5x57s5x120-1x9-1x17-1x70-1x98",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p10e59_52-0p9e32_14-1p16e39_48-2p17e19_4i1x5-2x58-1x64-1x135-1x188d1x98-1x120-1x123u5x80-1x5-5x7-2x58-2x28-1x23-1x95-2x82-3x1-2x10-1x97-2x188-1x135s6x35-1x5-2x2",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p4e43_49-2m1p16e4_34-1p9e17_48-7p11e52_59i1x188-1x63-1x81d1x70-1x98u5x57-3x1-1x6-1x23-14x8-3x10s7x35-2x120-1x9-1x5",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p4e43_49-1p9e17_48-2m1p17e4_24-7p11e52_56i2x75-1x10-1x5-4x84d2x98u10x65-4x63-5x10-1x28-1x23-2x1-1x135-1x87-1x91s8x120-1x9-1x98",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_34-4p4e6_13-7p10e52_59i2x65-1x5-1x188d1x70-1x98u1x0-4x1-7x57-1x23-3x63-8x65-1x17-1x10-1x6s2x5-6x35-2x120-1x9",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_24-1p9e17_48-7p4e52_59i2x65-1x5-1x188d2x98u8x8-6x65-1x76-1x10s4x120-2x5-2x70-1x9",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p16e43_44-1p3e48_39-2p7e19_4-7p10e59_52i1x64-1x147-2x188d2x2u2x1-2x28-1x5-5x7-1x23-1x58-6x80-1x97-1x95-1x10-1x75-1x135-1x87s6x35-2x120-1x17-1x98",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h2m1p16e4_24-1p9e17_48-6p11e49_43-7p10e59_52i2x65-1x5-1x188d1x98-1x17-1x120u7x57-3x63-1x17-8x65-1x23-1x6-3x1-2x10s6x35-2x120-2x5-1x9",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e48_17-2m1p16e4_34-6p11e49_43-4p4e6_13i1x10-1x5-1x52-1x135-4x84d4x120u5x63-10x65-3x10-1x1-1x28-1x75-1x92-1x62s1x70-7x120-1x9-1x5",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e39_48-4p10e40_13-2p16e4_24-0p4e14_32i1x177-1x58-1x135d1x70-1x2u5x7-5x177-2x82-2x5-1x58-1x97-1x28-1x23-1x6-1x1-1x10s1x5-5x35-2x120-1x9-1x53",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-7p4e52_53-2p16e24_22-0p10e14_51i1x10-1x5-1x75-1x91-4x84d4x10u5x7-1x23-4x5-3x82-3x28-1x58-2x150-5x10-17x57-1x1-1x135-1x87-1x75s1x98-1x2-4x35-1x9-2x120",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-6p17e43_49-2m1p16e4_24-7p4e53_52i1x59-1x65-1x188d2x98u10x59-8x5-1x23-1x10-1x62-1x52-1x75s1x2-1x70-6x120-1x5",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-2p16e4_34-6p4e43_49-7p11e52_53i3x63-2x5-1x188d1x70-1x98u2x0-4x1-4x57-1x23-3x63-9x65-1x17-2x10-1x75-1x87-1x91s2x5-3x120-1x9-4x10-1x17",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-2m1p16e4_24-0p4e14_51-7p11e52_53i1x10-1x5-4x84-1x75-1x91d2x98u8x59-1x23-4x5-2x6-3x10-7x57-1x87-1x75-1x135s3x120-4x10-2x2",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h1p17e16_48-0p9e14_32-2p7e4_19-7p10e52_59i1x147-1x64-1x188d1x9-1x17-1x53u1x1-3x28-3x5-2x6-5x7-1x23-2x58-1x82-1x97-5x80-1x123-1x10-1x62-1x52-1x75s3x35-2x120-3x2",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e32_14-1p3e48_17-2p8e24_34-4p10e40_50i1x58-1x177-1x51-1x87d1x5-1x9-2x10u6x177-1x97-1x58-1x28-1x82-3x1-3x123-1x87-1x51-1x75s1x70-7x120-1x35-1x17",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e32_14-1p3e39_48-2p16e5_24-4p10e13_40i1x110-1x132-3x5-2x87-2x10d1x9-1x17-1x70u13x132-5x7-4x5-2x1-1x28-2x57-1x123-1x135-1x87-1x52s9x120-1x70",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e14_32-1p3e48_39-2p16e5_24-7p4e53_52i1x147-1x64-1x188-1x87d3x0-1x10u2x5-2x1-5x7-2x28-2x58-2x82-11x132-4x26-1x123-1x91-1x135-1x188s4x120-1x9-1x35-1x5-1x70-1x98",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p4e51_10-1p16e17_48-2p8e4_24-4p10e40_13i1x87-2x10-3x5-2x53-1x135d1x2-1x9-1x17u4x1-5x26-5x4-1x23-2x82-4x57-3x5-5x7-2x132-4x110-1x97-2x58-1x135-1x91-1x87s6x35-1x53-1x120-1x70",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p4e14_8-1p9e17_48-2p16e4_24-4p10e40_13i1x75-2x10-3x5-2x57-1x110-1x135d1x9-1x120-1x53u5x7-3x5-5x110-2x82-4x1-6x132-2x2-1x97-3x10-1x58-1x75-1x91-1x135s1x2-1x70-6x35-1x120",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p11e10_51-1p9e48_17-2m1p16e4_34-6p4e49_43i4x84-2x75-1x10-1x5d2x2u7x59-3x81-1x23-1x87-1x91-1x75s1x5-10x120",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p10e32_14-1p9e48_17-2m1p16e4_34-6p4e49_43i4x84-2x75-1x10-1x5d2x2u4x57-10x59-1x28-1x87-1x91-1x75s1x5-10x120",
       "source": "blueprintcoc.com",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p10e14_32-1p9e48_39-2p16e5_24-4p4e13_40i1x64-1x87-1x147d1x98-2x120u5x7-7x147-2x5-3x10-1x28-1x1-1x52-1x135-1x87s6x0-2x10-2x120-1x9",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-08-31",
+      "pro": true
     }
   ],
   "bases": [
@@ -115,287 +178,376 @@
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAARAAAAAI0v0Pdu2GyUsCWylGqD6Ej",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJZVBd2xjECNRDq_s-RelgI",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJCYkh0dWTtX0eUe3sluuDe",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAI-vcLwBlfmf0co_q8cxAyf",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKxcQD_VpeDEjSR9AV-8cCl",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKtyHzXsVknhb1nd8qUfM9n",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKdm_8g08wJwaNzBvQnMkRs",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKcxkQJVGfedW6yssPNHIzj",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAK8NXnFxPiPmp1X4lmehu3r",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKwKX-VJAhS6qaoPgxiFmts",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKuia8k1yr4stFLvpiNS9C2",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKpjXA0T3l_XegvrD_WsNip",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKg967aQV2ma_21U89YRoXg",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAK7wq23EaYlspC4vbbrEoVc",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAK1YJ1CS2JP5pMY4I_WbnAj",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AHV%3AAAAAQgAAAAJSrIRi8YK6MQURfm1vZmNN",
       "source": "allclash.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAAJgAAAAKSxYMyXd-YbjWLTREPXOnY",
       "source": "allclash.com",
       "th": 17,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH17%3AWB%3AAAAAGQAAAAKWWfyASWtH1bWk6qRCE6VL",
       "source": "allclash.com",
       "th": 17,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAXAAAAAHDDel-JFrgpcI6_dGBJ-y6",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAWwAAAAHq3sNXLLbl2JqBhL2ZtyYa",
+      "source": "cocbasedrop.com",
+      "th": 18,
+      "type": "WB",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAWgAAAAHYupOPDUWEKC0G29vh50kv",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAVwAAAAHpJe3aEoMKS6XcWjJ5AziF",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAVQAAAAH1cmVJ1x4UKfX5I3YiRiBr",
+      "source": "cocbasedrop.com",
+      "th": 18,
+      "type": "WB",
+      "first_seen": "2026-08-31",
+      "pro": true
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAVQAAAAH1cKQwLuisSF85JA-Caj-2",
+      "source": "cocbasedrop.com",
+      "th": 18,
+      "type": "WB",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAARwAAAAJFvocnMfxEGt6x0h8Y2WFm",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAARwAAAAJCfNJW7hwDbLWZ0NktumyA",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAARwAAAAIuct4Nn-vBHH1rjo94Pl_V",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAARwAAAAI5y2CqTd58zOVqpF3XNvsX",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJCn6KrJhxqHeksKIwuzJ3p",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAI_hO7JNfUZkrRuKnbiuO5H",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAI-B9DShN42c4fSvf2yluPq",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAANgAAAAJmWA5ANJ1OssiDLhdTvrfx",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAKQAAAAKR7vn57_sWLz-SZ7nNpxz9",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAADgAAAALAGAnND5hsxkvJx3H6BrcK",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAAgAAAAMIVH3FZYgQ1u6hdtA63xwb",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AWB%3AAAAAAQAAAAMCsQlC_iQn9ndQ4b-JGlnO",
       "source": "allclash.com",
       "th": 18,
       "type": "WB",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAAWwAAAAHp3-R5PKcJMOQbFfUlUO7A",
+      "source": "cocbasedrop.com",
+      "th": 18,
+      "type": "HV",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAAVwAAAAHqrPO9Scz7OT7hETBgNgUo",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAAVwAAAAHqrEcH24znjv5D6929ENND",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAATAAAAAIAnhfEtBRlT4RtAwDibskw",
+      "source": "cocbasedrop.com",
+      "th": 18,
+      "type": "HV",
+      "first_seen": "2026-08-31",
+      "pro": true
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAARwAAAAJGsUZ9zQUGpcX5HHe9MkMS",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAARwAAAAJDqB6CcUOi6uAddjQJGQEA",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAARwAAAAJBkzdMalLYLK1j7PfDuj-K",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAARwAAAAI5AaEO1W1hQC5PE78bhXQs",
       "source": "blueprintcoc.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
     },
     {
       "url": "https://link.clashofclans.com/en/?action=OpenLayout&id=TH18%3AHV%3AAAAABwAAAALyEr70qnaprID9CUSAtvTg",
       "source": "allclash.com",
       "th": 18,
       "type": "HV",
-      "first_seen": "2026-08-31"
+      "first_seen": "2026-08-31",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=OpenLayout",
+      "source": "cocbasedrop.com",
+      "th": null,
+      "type": null,
+      "first_seen": "2026-08-31",
+      "pro": true
     }
   ]
 }

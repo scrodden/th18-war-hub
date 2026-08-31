@@ -339,6 +339,18 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
 .fresh-item .ic { font-size: 1.1rem; }
 .fresh-item .txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
 .fresh-item .src { color: var(--faint); font-size: .72rem; font-weight: 500; }
-.fresh-item .tag-new { margin-left: auto; }
+.fresh-item .badges { margin-left: auto; display: flex; gap: 5px; align-items: center; }
 .fresh-empty { color: var(--muted); font-size: .92rem; margin-top: 14px; }
 .fresh-more { color: var(--faint); font-size: .84rem; margin-top: 14px; }
+.tag-pro {
+  background: linear-gradient(145deg, var(--gold), #e8a92e); color: #241a04;
+  font-size: .62rem; font-weight: 800; letter-spacing: .05em;
+  padding: 2px 7px; border-radius: 999px;
+}
+.fresh-subhead { font-size: 1.05rem; margin: 22px 0 2px; display: flex; align-items: center; gap: 10px; }
+.pro-block {
+  border: 1px solid rgba(245,185,66,.25); background: rgba(245,185,66,.05);
+  border-radius: 14px; padding: 4px 18px 20px; margin-top: 6px;
+}
+.pro-block .fresh-subhead { color: var(--gold); }
+.pro-note { color: var(--faint); font-size: .82rem; margin: 4px 0 0; }
