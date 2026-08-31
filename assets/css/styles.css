@@ -176,6 +176,7 @@ p  { margin: 0 0 1em; }
 .chip.ground { color: var(--ground); border-color: rgba(78,201,138,.4); background: rgba(78,201,138,.10); }
 .chip.air    { color: var(--air);    border-color: rgba(76,201,240,.4); background: rgba(76,201,240,.10); }
 .chip.hybrid { color: var(--hybrid); border-color: rgba(192,140,240,.4); background: rgba(192,140,240,.10); }
+.chip.meta   { color: var(--meteor); border-color: rgba(255,107,53,.5); background: rgba(255,107,53,.12); }
 .chip.easy   { color: var(--easy);   border-color: rgba(78,201,138,.4); }
 .chip.medium { color: var(--medium); border-color: rgba(245,185,66,.4); }
 .chip.hard   { color: var(--hard);   border-color: rgba(255,107,107,.4); }
