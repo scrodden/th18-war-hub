@@ -320,6 +320,11 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
   .btn:hover, .nav-card:hover { transform: none; }
 }
 
+/* ---------- Video embed ---------- */
+.video-wrap { position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px;
+  overflow: hidden; border: 1px solid var(--border); background: var(--bg-2); }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
 /* ---------- Attack picker ---------- */
 .picker { display: flex; flex-direction: column; gap: 15px; }
 .pq { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }

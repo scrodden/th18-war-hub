@@ -61,6 +61,27 @@
   }
 })();
 
+/* ---- Per-strategy "Watch on YouTube" buttons (attacks page) ---- */
+(function () {
+  "use strict";
+  var strats = document.querySelectorAll(".strat[id]");
+  if (!strats.length) return;
+  strats.forEach(function (strat) {
+    var h = strat.querySelector("h3");
+    var row = strat.querySelector(".dl-row");
+    if (!h || !row || row.querySelector(".watch-btn")) return;
+    var name = h.textContent.replace(/\(.*?\)/g, "").trim();
+    var q = encodeURIComponent("TH18 " + name + " attack 2026");
+    var a = document.createElement("a");
+    a.className = "btn btn-ghost btn-sm watch-btn";
+    a.href = "https://www.youtube.com/results?search_query=" + q;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = "▶ Watch";
+    row.appendChild(a);
+  });
+})();
+
 /* ---- Attack picker (attacks page) ---- */
 (function () {
   "use strict";
