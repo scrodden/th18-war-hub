@@ -61,6 +61,72 @@
   }
 })();
 
+/* ---- Per-base design schematics on the defenses page ---- */
+(function () {
+  "use strict";
+  var thumbs = document.querySelectorAll(".base-thumb[data-arch]");
+  if (!thumbs.length) return;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  function schematic(o) {
+    var x0 = 30, y0 = 15, W = 200, H = 150;
+    var rings = parseInt(o.rings, 10) || 3;
+    var air = o.air === "1";
+    var maze = o.maze === "1";
+    var traps = o.traps === "1";
+    var splashN = parseInt(o.splash, 10) || 2;
+
+    var s = '<svg viewBox="0 0 260 180" class="thumb-svg" role="img" aria-label="Schematic of a ' +
+      esc(o.arch) + ' base layout">';
+
+    for (var i = 0; i < rings; i++) {
+      var ix = i * 26, iy = i * 20;
+      var fill = i === 0 ? "#201d29" : (i === rings - 1 ? "#2c2738" : "#262232");
+      s += '<rect x="' + (x0 + ix) + '" y="' + (y0 + iy) + '" width="' + (W - 2 * ix) +
+        '" height="' + (H - 2 * iy) + '" rx="14" fill="' + fill + '" stroke="#3a3448" stroke-width="2"/>';
+    }
+    if (maze) {
+      s += '<line x1="130" y1="' + y0 + '" x2="130" y2="' + (y0 + H) + '" stroke="#322e40" stroke-width="1.5"/>';
+      s += '<line x1="' + x0 + '" y1="90" x2="' + (x0 + W) + '" y2="90" stroke="#322e40" stroke-width="1.5"/>';
+      s += '<line x1="80" y1="35" x2="80" y2="145" stroke="#322e40" stroke-width="1"/>';
+      s += '<line x1="180" y1="35" x2="180" y2="145" stroke="#322e40" stroke-width="1"/>';
+    }
+    // Multi-Gear Tower near core
+    s += '<rect x="124" y="55" width="12" height="12" rx="2" fill="#f5b942"/>';
+    // splash defenses
+    var splash = [[104, 66], [156, 66], [104, 114], [156, 114]].slice(0, splashN);
+    splash.forEach(function (p) {
+      s += '<rect x="' + (p[0] - 6) + '" y="' + (p[1] - 6) + '" width="12" height="12" rx="2" fill="#ff6b35"/>';
+    });
+    // air defenses
+    var ad = air ? [[74, 50], [186, 50], [74, 130], [186, 130]] : [[92, 58], [168, 122]];
+    ad.forEach(function (p) { s += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="5" fill="#4cc9f0"/>'; });
+    // Town Hall (drawn last so it's on top)
+    s += '<rect x="117" y="77" width="26" height="26" rx="6" fill="#3a2a12" stroke="#f5b942" stroke-width="2.5"/>';
+    s += '<text x="130" y="95" text-anchor="middle" style="font:700 10px sans-serif" fill="#f5b942">TH</text>';
+    // traps
+    if (traps) {
+      [[55, 38], [205, 38], [55, 142], [205, 142]].forEach(function (p) {
+        s += '<path d="M' + (p[0] - 5) + ' ' + (p[1] - 5) + ' l10 10 M' + (p[0] + 5) + ' ' + (p[1] - 5) +
+          ' l-10 10" stroke="#ff6b6b" stroke-width="2"/>';
+      });
+    }
+    s += '<text x="130" y="173" text-anchor="middle" style="font:600 10px sans-serif" fill="#a6a1b8">' +
+      esc(o.arch) + "</text>";
+    s += "</svg>";
+    return s;
+  }
+
+  thumbs.forEach(function (el) {
+    el.insertAdjacentHTML("afterbegin", schematic(el.dataset));
+  });
+})();
+
 /* ---- "Fresh this week" feed (populated by the weekly GitHub Actions bot) ---- */
 (function () {
   "use strict";

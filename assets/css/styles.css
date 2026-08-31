@@ -251,6 +251,11 @@ p  { margin: 0 0 1em; }
 .base-card .why li { margin-bottom: 7px; color: var(--muted); font-size: .93rem; }
 .base-card .why li strong { color: var(--text); }
 .base-card .foot { margin-top: auto; padding-top: 14px; }
+.base-thumb { margin: 12px 0 2px; }
+.base-thumb .thumb-svg { width: 100%; height: auto; display: block; border-radius: 10px;
+  background: var(--bg-2); border: 1px solid var(--border); }
+.thumb-cap { font-size: .72rem; color: var(--faint); text-align: center; margin: 7px 0 2px; }
+.thumb-cap .k { color: var(--muted); white-space: nowrap; }
 
 /* ---------- How-to steps ---------- */
 .howto { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; counter-reset: h; }
