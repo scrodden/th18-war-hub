@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TH18 CWL Defense Bases — Import-Ready Layouts & Why They Hold</title>
+  <meta name="description" content="Import-ready Town Hall 18 Clan War League base designs, plus a plain-English breakdown of the defensive principles that make them hard to three-star in the current meta." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="rock">☄️</span> TH18 <b>War&nbsp;Hub</b></a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="attacks.html">Attack Strategies</a>
+        <a href="defenses.html" class="active">CWL Defenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-top:56px">
+    <div class="wrap">
+      <span class="badge">🛡️ Import-ready Clan War League bases</span>
+      <h1>Bases that don't get <span class="grad">three-starred</span>.</h1>
+      <p class="lead">A curated vault of real TH18 war/CWL layouts you can import in one tap — each paired with a
+        plain-English explanation of exactly <em>why</em> it's hard to break, so you can defend on purpose instead of
+        copying blindly.</p>
+      <div class="hero-cta">
+        <a class="btn btn-meteor" href="#vault">🛡️ Jump to the base vault</a>
+        <a class="btn btn-ghost" href="#principles">📐 Learn the design principles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESIGN PRINCIPLES -->
+  <section id="principles">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Defense fundamentals</div>
+        <h2>Why a good TH18 base holds — in plain English</h2>
+        <p class="lead">Every layout in the vault is built from the same handful of ideas. Understand these and you
+          can tell a great base from a pretty one, and tweak any layout to your clan's meta.</p>
+      </div>
+
+      <div class="grid cols-2" style="align-items:start">
+        <figure style="margin:0">
+          <svg class="diagram" viewBox="0 0 560 520" role="img" aria-label="Annotated ring base: centered Town Hall, concentric wall compartments, spread air defenses, splash defenses on clumping lanes, a roaming Guardian patrol, and traps on the funnels.">
+            <defs>
+              <marker id="pd" markerWidth="8" markerHeight="8" refX="4" refY="4"><circle cx="4" cy="4" r="3" fill="#ff6b6b"/></marker>
+            </defs>
+            <!-- outer ring -->
+            <rect x="60" y="70" width="440" height="400" rx="22" fill="#201d29" stroke="#45405a" stroke-width="2.5"/>
+            <!-- mid ring -->
+            <rect x="140" y="140" width="280" height="260" rx="16" fill="#262232" stroke="#3a3448" stroke-width="2.5"/>
+            <!-- inner ring -->
+            <rect x="215" y="205" width="130" height="130" rx="12" fill="#2c2738" stroke="#5a4a2a" stroke-width="2.5"/>
+            <!-- compartment lines -->
+            <line x1="280" y1="70" x2="280" y2="140" stroke="#322e40" stroke-width="2"/>
+            <line x1="280" y1="400" x2="280" y2="470" stroke="#322e40" stroke-width="2"/>
+            <line x1="60" y1="270" x2="140" y2="270" stroke="#322e40" stroke-width="2"/>
+            <line x1="420" y1="270" x2="500" y2="270" stroke="#322e40" stroke-width="2"/>
+            <!-- Town Hall center -->
+            <rect x="255" y="245" width="50" height="50" rx="9" fill="#3a2a12" stroke="#f5b942" stroke-width="2.5"/>
+            <text x="280" y="275" text-anchor="middle" class="svg-label" fill="#f5b942">TH</text>
+            <!-- air defenses spread (blue) -->
+            <circle cx="190" cy="185" r="8" fill="#4cc9f0"/><text x="176" y="176" class="svg-sub" fill="#4cc9f0">AD</text>
+            <circle cx="370" cy="185" r="8" fill="#4cc9f0"/><text x="356" y="176" class="svg-sub" fill="#4cc9f0">AD</text>
+            <circle cx="190" cy="355" r="8" fill="#4cc9f0"/><text x="176" y="378" class="svg-sub" fill="#4cc9f0">AD</text>
+            <circle cx="370" cy="355" r="8" fill="#4cc9f0"/><text x="356" y="378" class="svg-sub" fill="#4cc9f0">AD</text>
+            <!-- splash defenses on clump lanes (orange) -->
+            <rect x="242" y="182" width="16" height="16" rx="3" fill="#ff6b35"/><text x="250" y="176" text-anchor="middle" class="svg-sub" fill="#ff6b35">Mono</text>
+            <rect x="302" y="182" width="16" height="16" rx="3" fill="#ff6b35"/><text x="310" y="176" text-anchor="middle" class="svg-sub" fill="#ff6b35">S-Wiz</text>
+            <rect x="242" y="342" width="16" height="16" rx="3" fill="#ff6b35"/><text x="250" y="372" text-anchor="middle" class="svg-sub" fill="#ff6b35">Scat</text>
+            <rect x="302" y="342" width="16" height="16" rx="3" fill="#ff6b35"/><text x="310" y="372" text-anchor="middle" class="svg-sub" fill="#ff6b35">Inf</text>
+            <!-- Multi-gear near core -->
+            <rect x="272" y="212" width="16" height="16" rx="3" fill="#f5b942"/><text x="280" y="207" text-anchor="middle" class="svg-sub" fill="#f5b942">MGT</text>
+            <!-- Guardian patrol (dashed loop) -->
+            <rect x="175" y="175" width="210" height="190" rx="60" fill="none" stroke="#c08cf0" stroke-width="2" stroke-dasharray="7 6"/>
+            <circle cx="175" cy="270" r="9" fill="#c08cf0"/><text x="150" y="255" class="svg-sub" fill="#c08cf0">Guardian</text>
+            <!-- traps on funnels (small red x) -->
+            <g stroke="#ff6b6b" stroke-width="2.5">
+              <path d="M112 116 l10 10 M122 116 l-10 10"/>
+              <path d="M438 116 l10 10 M448 116 l-10 10"/>
+              <path d="M112 424 l10 10 M122 424 l-10 10"/>
+            </g>
+            <text x="98" y="106" class="svg-sub" fill="#ff6b6b">traps on lanes</text>
+            <!-- title -->
+            <text x="280" y="44" text-anchor="middle" class="svg-label" fill="#eceaf4" style="font-size:14px">Anatomy of a strong TH18 war base</text>
+            <text x="280" y="500" text-anchor="middle" class="svg-sub">Deep rings · centered TH · spread air · splash on clump lanes · roaming Guardian · trapped funnels</text>
+          </svg>
+          <figcaption class="diagram-cap">Schematic, not to scale — it shows <em>roles and positions</em>, the ideas
+            every base in the vault uses.</figcaption>
+        </figure>
+
+        <div>
+          <div class="feat" style="margin-bottom:16px">
+            <div class="fico">🎯</div>
+            <div><h4>Centered Town Hall, deep rings</h4>
+              <p>Burying the Town Hall behind several wall layers forces attackers to grind through the whole base to
+                three-star. An edge Town Hall gets sniped instantly by a Royal Champion charge or a blimp — so it lives
+                in the middle.</p></div>
+          </div>
+          <div class="feat" style="margin-bottom:16px">
+            <div class="fico">🧱</div>
+            <div><h4>Compartmentalization</h4>
+              <p>Chopping the base into many small walled boxes means every push needs a fresh wall-break and can only
+                threaten one box at a time. It strangles Super Bowler and Yeti smashes and punishes any army that
+                skipped its funnel.</p></div>
+          </div>
+          <div class="feat" style="margin-bottom:16px">
+            <div class="fico">💥</div>
+            <div><h4>Splash defenses on the clump lanes</h4>
+              <p>Monolith, Scattershots, the new <b>Super Wizard Tower</b> and Eagle Artillery sit where troops
+                naturally bunch. Clustered Root Riders and Yetis get area-wiped; packed Electro Dragons and Hydra get
+                chain-zapped. The base forces attackers to spread — which cuts their damage.</p></div>
+          </div>
+          <div class="feat" style="margin-bottom:16px">
+            <div class="fico">✈️</div>
+            <div><h4>Spread &amp; centered air defense</h4>
+              <p>Air Defenses in a wide diamond plus centered Air Sweepers deny air armies a clean lane and blow packs
+                off the core — so Electro/Hydra can't just float to the middle untouched.</p></div>
+          </div>
+          <div class="feat">
+            <div class="fico">🌀</div>
+            <div><h4>Multi-Gear Tower in the core</h4>
+              <p>It cycles between ground and air modes, so one central building threatens <em>every</em> archetype and
+              never leaves a "free" army type.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TH18-specific tools -->
+      <div class="section-head" style="margin-top:48px">
+        <div class="eyebrow">TH18's new deterrents</div>
+        <h2>The three defenses that punish a sloppy attack</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>🛡️ The roaming Guardian</h3>
+          <p class="muted">Smasher or Longshot patrols a route, so it can physically <strong>walk into a stalled
+            push and reset it</strong>. Attackers can't fully pre-plan around a moving heavy unit — and Smasher rages
+            when the Town Hall dies, right when the attacker is trying to clean up.</p>
+        </div>
+        <div class="card">
+          <h3>📈 The Revenge Tower</h3>
+          <p class="muted">It <strong>gains power and hitpoints as your base dies</strong> (at 5, 20 and 40 buildings
+            destroyed). That turns every 90%-and-stall attack into a failed three-star — it directly punishes the most
+            common attacker mistake: mismanaging the tail.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ The Super Wizard Tower</h3>
+          <p class="muted">Its bolt <strong>chains across up to 15 units</strong>. Any air army or swarm that clusters
+            — Electro Dragon spam, Hydra, Balloons — feeds it. Good bases place it where those armies are funneled to
+            bunch up.</p>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:24px">
+        <strong>How this beats the meta attacks:</strong> a centered ring + trapped funnels drags out the
+        <b>RC/Meteor-Golem</b> ground smash while the Monolith melts the golem clump; spread air + Super Wizard Tower
+        break up <b>Electro/Hydra</b> air packs; well-protected key defenses deny the <b>Queen Charge</b> cheap value;
+        and spreading your strong defenses means no single <b>Zap-Thrower</b> cluster can delete the core in one shot.
+        The Revenge Tower and Guardian clean up whatever slips through.
+      </div>
+    </div>
+  </section>
+
+  <!-- BASE VAULT -->
+  <section id="vault" style="background:linear-gradient(180deg,transparent,rgba(245,185,66,.04))">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The base vault</div>
+        <h2>Import-ready TH18 war &amp; CWL bases</h2>
+        <p class="lead">Tap <b>Download base</b> on the device with Clash of Clans installed — it opens the Layout
+          Editor with the design loaded. Save it, then set it as your War base for Clan War League.</p>
+      </div>
+
+      <div class="base-grid">
+
+        <!-- Base 1 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip ground">Anti-ground</span></div>
+            <span class="faint" style="font-size:.8rem">Ring · Aug '26</span>
+          </div>
+          <h3>Ringfort — anti Fireball-Golem &amp; Throwers</h3>
+          <p class="muted" style="font-size:.95rem">A deep ring build tuned to counter the ground meta: Golem-Fireball
+            pushes, Royal Champion charges and Thrower spam.</p>
+          <ul class="why">
+            <li><strong>Centered TH behind stacked rings</strong> makes the RC walk long and exposed — no cheap snipe.</li>
+            <li><strong>Splash on the ground lanes</strong> area-wipes clustered Golems, Yetis and Throwers.</li>
+            <li><strong>Trapped funnels</strong> punish the un-funneled smash that most Thrower armies rely on.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJZVBd2xjECNRDq_s-RelgI">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJZVBd2xjECNRDq_s-RelgI">🔗 Copy link</button>
+          </div>
+        </div>
+
+        <!-- Base 2 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip hybrid">Anti 2-Star</span></div>
+            <span class="faint" style="font-size:.8rem">Anti-2 · Aug '26</span>
+          </div>
+          <h3>Gatekeeper — anti 2-star hold</h3>
+          <p class="muted" style="font-size:.95rem">Built to <em>deny the second star</em>: even when the Town Hall
+            falls, the layout protects enough to keep attackers under 50%+TH or off the third star.</p>
+          <ul class="why">
+            <li><strong>Value spread across the base</strong> so no single push banks two stars cheaply.</li>
+            <li><strong>Isolated Town Hall compartment</strong> — taking it doesn't hand over the surrounding weight.</li>
+            <li><strong>Revenge Tower &amp; Guardian</strong> positioned to punish the 90%-and-stall.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAK8NXnFxPiPmp1X4lmehu3r">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAK8NXnFxPiPmp1X4lmehu3r">🔗 Copy link</button>
+          </div>
+        </div>
+
+        <!-- Base 3 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip air">Anti-air</span></div>
+            <span class="faint" style="font-size:.8rem">Ring · Jul '26</span>
+          </div>
+          <h3>Stormbreak — anti Electro &amp; Hydra</h3>
+          <p class="muted" style="font-size:.95rem">A war/CWL ring layout that leans into TH18's anti-air toys to break
+            up Electro Dragon spam and Hydra packs.</p>
+          <ul class="why">
+            <li><strong>Wide-diamond Air Defense + centered Sweepers</strong> deny air a clean lane to the core.</li>
+            <li><strong>Super Wizard Tower on the air funnel</strong> chains through clustered dragons and hounds.</li>
+            <li><strong>Compartments</strong> stop a single Overgrowth/Rage from carrying the whole push.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAK1YJ1CS2JP5pMY4I_WbnAj">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAK1YJ1CS2JP5pMY4I_WbnAj">🔗 Copy link</button>
+          </div>
+        </div>
+
+        <!-- Base 4 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip hybrid">Anti 2-Star</span></div>
+            <span class="faint" style="font-size:.8rem">Anti-2 · Jun '26</span>
+          </div>
+          <h3>Bulwark — balanced anti 2-star</h3>
+          <p class="muted" style="font-size:.95rem">A well-rounded war base with no obvious weak archetype — it makes
+            the attacker <em>choose</em> a plan and then punishes that choice.</p>
+          <ul class="why">
+            <li><strong>No exposed key defense</strong> to snipe, so Queen Charge value is denied.</li>
+            <li><strong>Central Multi-Gear Tower</strong> threatens both air and ground pushes.</li>
+            <li><strong>Baited hero lanes</strong> waste an RC/Duke entry on the outside of the base.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKxcQD_VpeDEjSR9AV-8cCl">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAJgAAAAKxcQD_VpeDEjSR9AV-8cCl">🔗 Copy link</button>
+          </div>
+        </div>
+
+        <!-- Base 5 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip ground">Anti-everything</span></div>
+            <span class="faint" style="font-size:.8rem">Ring · May '26</span>
+          </div>
+          <h3>Keepstone — all-round war ring</h3>
+          <p class="muted" style="font-size:.95rem">A dependable anti-3-star ring for clans that want one solid base
+            that doesn't fold to any single meta army.</p>
+          <ul class="why">
+            <li><strong>Deep centered core</strong> forces a full commitment to reach the Town Hall.</li>
+            <li><strong>Even splash coverage</strong> so ground and air both meet area damage.</li>
+            <li><strong>Trap-heavy funnels</strong> delete the clustered troops both smashes depend on.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKwKX-VJAhS6qaoPgxiFmts">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKwKX-VJAhS6qaoPgxiFmts">🔗 Copy link</button>
+          </div>
+        </div>
+
+        <!-- Base 6 -->
+        <div class="card base-card">
+          <div class="tag-row">
+            <div class="chips"><span class="chip">War / CWL</span><span class="chip hybrid">Anti-everything</span></div>
+            <span class="faint" style="font-size:.8rem">Ring · Apr '26</span>
+          </div>
+          <h3>Aegis — compartment maze</h3>
+          <p class="muted" style="font-size:.95rem">A heavily-compartmentalized maze that grinds down smashes and
+            drags every attack past the 3-minute mark.</p>
+          <ul class="why">
+            <li><strong>Many small boxes</strong> force repeated wall-breaks and stall Bowlers/Yetis.</li>
+            <li><strong>Guardian patrol through the core</strong> resets pushes that try to camp the middle.</li>
+            <li><strong>Ramping Revenge Tower</strong> makes the final cleanup dangerous for the attacker.</li>
+          </ul>
+          <div class="foot">
+            <a class="btn btn-gold btn-block" href="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKuia8k1yr4stFLvpiNS9C2">🛡️ Download base</a>
+            <button class="btn btn-ghost btn-sm btn-block" style="margin-top:8px" data-copy="https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAKuia8k1yr4stFLvpiNS9C2">🔗 Copy link</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SET AS WAR BASE -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Using your base</div>
+        <h2>Set it as your Clan War League base</h2>
+      </div>
+      <div class="howto">
+        <div class="step"><div class="n">1</div><h4>Open the link in-game</h4>
+          <p>On your device, tap <b>Download base</b>. Clash of Clans opens the Layout Editor with the design loaded.</p></div>
+        <div class="step"><div class="n">2</div><h4>Save the layout</h4>
+          <p>Tap the loaded layout, let it fill your editor, then <b>Save</b>. Re-place anything the editor can't map
+            1:1 (rare) using the diagram above as a guide.</p></div>
+        <div class="step"><div class="n">3</div><h4>Assign it to War</h4>
+          <p>In the layout menu choose <b>"Set as War Base"</b>. It'll be live for your next Clan War League battle.</p></div>
+      </div>
+
+      <div class="callout warn" style="margin-top:20px">
+        <strong>CWL tip:</strong> rotate between two or three of these across the week. Once an opponent has scouted
+        your base and knows the trap layout, a fresh design forces them to re-plan — and re-planning is where three-stars
+        get dropped.
+      </div>
+    </div>
+  </section>
+
+  <!-- HONESTY NOTE -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="notice">
+        <p style="margin:0 0 10px"><strong>Where these base links come from (the honest version):</strong></p>
+        <p style="margin:0 0 10px">Unlike army links, a base link's ID (<code>TH18:WB:AAAA…</code>) is an
+          <em>opaque server key</em> — it points to a layout Supercell stored when a real player shared that base
+          in-game. There's no formula to hand-build one for an arbitrary design, so <strong>every base here is a
+          genuine, publicly-shared community layout</strong> curated from base-sharing sites (AllClash and similar),
+          matched to the defensive principles above.</p>
+        <p style="margin:0">The meta and these rotations refresh every season. If a link ever looks stale, grab the
+          latest TH18 war/CWL layout from a reputable base site and apply the same checklist: centered TH, deep rings,
+          spread air, splash on the clump lanes, trapped funnels. Want me to <strong>swap in your own scouted layout
+          links</strong> or a specific base creator's set? That's a one-line change.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="rock">☄️</span> TH18 <b>War&nbsp;Hub</b></div>
+        <div class="faint">Unofficial fan site. Not affiliated with Supercell.</div>
+      </div>
+      <div class="src">
+        Base layouts are real, publicly-shared community links curated from public base-sharing sites; defensive
+        rationale is written to match the current TH18 meta and Supercell's official TH18 feature set. Verify a base
+        before a serious war — metas and rotations shift every season.
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

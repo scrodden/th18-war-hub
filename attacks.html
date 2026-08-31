@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TH18 Attack Strategies — Army Downloads & Step-by-Step Guides</title>
+  <meta name="description" content="The five strongest Town Hall 18 attack strategies in the current Clash of Clans meta, each explained step by step with a one-tap army you can load into the game." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .subnav { position: sticky; top: 64px; z-index: 40; background: rgba(19,17,24,.9); backdrop-filter: blur(8px);
+              border-bottom: 1px solid var(--border); }
+    .subnav .wrap { display: flex; gap: 6px; overflow-x: auto; padding: 10px 20px; }
+    .subnav a { white-space: nowrap; color: var(--muted); font-weight: 600; font-size: .86rem;
+                padding: 6px 12px; border-radius: 8px; border: 1px solid transparent; }
+    .subnav a:hover { color: var(--text); text-decoration: none; }
+    .subnav a.active { color: var(--gold); border-color: var(--border-2); background: var(--panel); }
+    .dl-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="rock">☄️</span> TH18 <b>War&nbsp;Hub</b></a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Overview</a>
+        <a href="attacks.html" class="active">Attack Strategies</a>
+        <a href="defenses.html">CWL Defenses</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="subnav">
+    <div class="wrap">
+      <a href="#anatomy">How attacks work</a>
+      <a href="#rc-meteor">1 · RC Walk Meteor Golem</a>
+      <a href="#zap-throwers">2 · Zap Throwers</a>
+      <a href="#electro">3 · Electro Dragon Spam</a>
+      <a href="#queen-bowlers">4 · Queen Charge Bowlers</a>
+      <a href="#hydra">5 · Hydra</a>
+    </div>
+  </nav>
+
+  <!-- INTRO -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">TH18 Attack Playbook</div>
+        <h2>Five ways to three-star at Town Hall 18</h2>
+        <p class="lead">Each strategy below tells you <strong>when to use it</strong>, <strong>what the army does</strong>,
+          and the <strong>exact deployment plan</strong> — then hands you a one-tap army link. Read the archetype,
+          match it to the base you're facing, and download.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Strategy</th><th>Archetype</th><th>Difficulty</th><th>Best against</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>RC Walk Meteor Golem</b></td><td>Ground</td><td>Medium</td><td>Ring bases, centered Town Hall, heavy splash cores</td></tr>
+            <tr><td><b>Zap Throwers (Dragon Duke)</b></td><td>Hybrid</td><td>Medium</td><td>Bases with one scary defense cluster you can zap open</td></tr>
+            <tr><td><b>Electro Dragon Spam</b></td><td>Air</td><td>Easy</td><td>Compact bases, weak/spread air defense</td></tr>
+            <tr><td><b>Queen Charge Super Bowlers</b></td><td>Hybrid</td><td>Hard</td><td>Anti-air bases, exposed key defenses, open Town Halls</td></tr>
+            <tr><td><b>Hydra</b></td><td>Air</td><td>Hard</td><td>Bases without stacked, centered air defense</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANATOMY OF AN ATTACK -->
+  <section id="anatomy">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The fundamentals</div>
+        <h2>The anatomy of every TH18 attack</h2>
+        <p class="lead">Whatever army you bring, a three-star follows the same four beats. Learn the shape once and
+          every strategy below just becomes a variation on it.</p>
+      </div>
+
+      <div class="grid cols-2" style="align-items:start">
+        <div>
+          <figure style="margin:0">
+            <svg class="diagram" viewBox="0 0 600 360" role="img" aria-label="Funnel diagram: heroes clear the two front corners while the main force drives up the middle to the core.">
+              <defs>
+                <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L7,3 L0,6 Z" fill="#f5b942"/>
+                </marker>
+                <marker id="arrowM" markerWidth="12" markerHeight="12" refX="7" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,0 L8,3.5 L0,7 Z" fill="#ff6b35"/>
+                </marker>
+              </defs>
+              <!-- base outline -->
+              <rect x="150" y="70" width="300" height="230" rx="16" fill="#221f2c" stroke="#45405a" stroke-width="2"/>
+              <!-- compartments -->
+              <line x1="250" y1="70" x2="250" y2="300" stroke="#322e40" stroke-width="2"/>
+              <line x1="350" y1="70" x2="350" y2="300" stroke="#322e40" stroke-width="2"/>
+              <line x1="150" y1="150" x2="450" y2="150" stroke="#322e40" stroke-width="2"/>
+              <line x1="150" y1="220" x2="450" y2="220" stroke="#322e40" stroke-width="2"/>
+              <!-- core TH -->
+              <rect x="278" y="162" width="44" height="44" rx="8" fill="#3a2a12" stroke="#f5b942" stroke-width="2"/>
+              <text x="300" y="189" text-anchor="middle" class="svg-label" fill="#f5b942">TH</text>
+              <!-- defenses dots -->
+              <circle cx="200" cy="110" r="7" fill="#4cc9f0"/><circle cx="400" cy="110" r="7" fill="#4cc9f0"/>
+              <circle cx="200" cy="260" r="7" fill="#ff6b6b"/><circle cx="400" cy="260" r="7" fill="#ff6b6b"/>
+              <!-- King funnel (left) -->
+              <text x="70" y="300" class="svg-label" fill="#4ec98a">👑 King</text>
+              <path d="M95 300 C150 300, 175 270, 200 250" stroke="#f5b942" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+              <!-- Queen funnel (right) -->
+              <text x="470" y="300" class="svg-label" fill="#4ec98a">🏹 Queen</text>
+              <path d="M505 300 C450 300, 425 270, 400 250" stroke="#f5b942" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+              <!-- main force spear -->
+              <text x="300" y="345" text-anchor="middle" class="svg-label" fill="#ff6b35">Main force</text>
+              <path d="M300 320 L300 212" stroke="#ff6b35" stroke-width="5" fill="none" marker-end="url(#arrowM)"/>
+              <!-- top label -->
+              <text x="300" y="40" text-anchor="middle" class="svg-label" fill="#eceaf4" style="font-size:14px">Build a funnel, then spear the core</text>
+            </svg>
+            <figcaption class="diagram-cap">The funnel: heroes strip the two front corners so the main army can't
+              "wrap" around the outside — it's forced straight into the core.</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <ol class="steps" style="margin-top:4px">
+            <li><b>Funnel first.</b> Send cheap units or a hero down each side of your entry to clear the outer
+              buildings. If you skip this, your army pathes <em>around</em> the base and never reaches the Town Hall —
+              the #1 reason attacks fail at TH18.</li>
+            <li><b>Charge a hero in.</b> A Royal Champion (Electro Boots) or Queen (Giant Arrow + Healers) punches a
+              lane toward the middle and softens the scariest defense before the main force commits.</li>
+            <li><b>Commit the main force + spells.</b> Drop your tanks and damage together so they arrive as one wave.
+              Rage/Overgrowth/Invisibility go down the <em>instant</em> troops hit the first heavy defense — not before.</li>
+            <li><b>Manage the tail.</b> Save one spell and your hero abilities for the <b>Revenge Tower</b> and roaming
+              <b>Guardian</b>, which get nastier as the base dies. Sloppy 95%-and-stall = a failed three-star.</li>
+          </ol>
+          <div class="callout warn">
+            <strong>TH18 twist:</strong> the <b>Guardian</b> patrols, so it can walk into your army mid-raid, and the
+            <b>Super Wizard Tower</b> chains across clumped troops. Keep air units spread and time a
+            <b>Totem Spell</b> or Invisibility to slip past the worst of it.
+          </div>
+        </div>
+      </div>
+
+      <!-- phases strip -->
+      <figure style="margin:26px 0 0">
+        <svg class="diagram" viewBox="0 0 680 120" role="img" aria-label="Four phases: Funnel, Hero charge, Main force plus spells, Cleanup.">
+          <line x1="70" y1="60" x2="610" y2="60" stroke="#45405a" stroke-width="3"/>
+          <g text-anchor="middle">
+            <circle cx="70" cy="60" r="22" fill="#1b1922" stroke="#f5b942" stroke-width="3"/><text x="70" y="66" class="svg-label" fill="#f5b942">1</text>
+            <text x="70" y="104" class="svg-sub">Funnel</text>
+            <circle cx="250" cy="60" r="22" fill="#1b1922" stroke="#f5b942" stroke-width="3"/><text x="250" y="66" class="svg-label" fill="#f5b942">2</text>
+            <text x="250" y="104" class="svg-sub">Hero charge</text>
+            <circle cx="430" cy="60" r="22" fill="#1b1922" stroke="#ff6b35" stroke-width="3"/><text x="430" y="66" class="svg-label" fill="#ff6b35">3</text>
+            <text x="430" y="104" class="svg-sub">Main force + spells</text>
+            <circle cx="610" cy="60" r="22" fill="#1b1922" stroke="#ff6b35" stroke-width="3"/><text x="610" y="66" class="svg-label" fill="#ff6b35">4</text>
+            <text x="610" y="104" class="svg-sub">Cleanup &amp; tail</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <!-- STRATEGY 1: RC WALK METEOR GOLEM -->
+  <section class="strat" id="rc-meteor">
+    <div class="wrap">
+      <div class="strat-head">
+        <span class="strat-num">01</span>
+        <h3>RC Walk Meteor Golem</h3>
+        <div class="chips"><span class="chip ground">Ground smash</span><span class="chip medium">Medium</span></div>
+      </div>
+      <p class="lead" style="margin-top:10px">The most reliable ground three-star at TH18. The <b>Royal Champion</b>
+        walks a full corner off the base to build a clean funnel, then <b>Meteor Golems</b> tank into the core while
+        <b>Super Yetis</b> and support wreck compartments behind them.</p>
+
+      <div class="strat-grid">
+        <div>
+          <ol class="steps">
+            <li><b>Pick your entry corner.</b> Aim at the side with the fewest point defenses — you'll walk the RC
+              along the edge from here.</li>
+            <li><b>RC walk to funnel.</b> Drop the Royal Champion (with <b>Electro Boots</b>) plus a couple of tanky
+              units at the corner. Let her <em>walk the outside</em>, clearing buildings so the main army can't wrap.
+              Feed her an <b>Invisibility spell</b> if a big defense targets her early.</li>
+            <li><b>Send the Meteor Golems + Super Yetis.</b> Once the funnel is open, commit your golems as the front
+              wall. Their thrown Meteormites chip defenses <em>over the first wall</em> so you're doing damage before
+              you even break in.</li>
+            <li><b>Rage + Heal the push.</b> Drop <b>Rage</b> when the pack hits the core and <b>Healing</b> when the
+              Super Wizard Tower or Monolith starts melting them. Keep them moving as one blob.</li>
+            <li><b>Save an Invis for the tail.</b> Use it to slide past the roaming <b>Guardian</b> or the ramping
+              <b>Revenge Tower</b> so the last 20% doesn't stall you out.</li>
+          </ol>
+
+          <div class="bestvs">
+            <div class="yes">
+              <h5>✓ Use it against</h5>
+              <ul><li>Centered Town Hall / deep ring bases</li><li>Heavy splash cores (bait them with golems)</li><li>Compartment-maze bases that punish air</li></ul>
+            </div>
+            <div class="no">
+              <h5>✕ Avoid when</h5>
+              <ul><li>Town Hall is on the edge (over-kill for a snipe)</li><li>Bunched Giant Bombs + spring traps on the ground path</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="army-box">
+            <h4>Army at a glance</h4>
+            <div class="roster-label">Core</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Meteor Golems (front tanks)</span></li>
+              <li><span>Super Yetis (core damage)</span></li>
+            </ul>
+            <div class="roster-label">Support &amp; spells</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Rage · Healing · Invisibility</span></li>
+              <li><span>Poison for the tail</span></li>
+            </ul>
+            <div class="roster-label">Heroes &amp; equipment <span class="faint" style="text-transform:none;letter-spacing:0;font-weight:400">— ★ carries the attack</span></div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span><b>Royal Champion</b> — Electro Boots + Seeking Shield ★</span></li>
+              <li><span><b>Grand Warden</b> — Eternal Tome + Fireball ★</span></li>
+              <li><span><b>Barbarian King</b> — Giant Gauntlet + Spiky Ball</span></li>
+              <li><span><b>Archer Queen</b> — Giant Arrow + Healer Puppet</span></li>
+              <li><span><b>Minion Prince</b> — Meteor Staff + Metal Pants</span></li>
+              <li><span><b>Dragon Duke</b> — Rocket Backpack (side funnel)</span></li>
+            </ul>
+            <p class="faint" style="font-size:.82rem;margin:10px 0 0">Recommended meta loadout — the exact troops,
+              spells and equipment import automatically with the download.</p>
+          </div>
+
+          <div class="callout">💡 <strong>Common mistake:</strong> committing the Meteor Golems <em>before</em> the RC
+            has opened the corner. No funnel = your golems drift sideways and die on the outside. Be patient — let the
+            walk finish first.</div>
+
+          <div class="dl-row">
+            <a class="btn btn-meteor btn-sm" href="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e39_48-4p10e40_13-2p16e4_24-0p4e14_32i1x177-1x58-1x135d1x70-1x2u5x7-5x177-2x82-2x5-1x58-1x97-1x28-1x23-1x6-1x1-1x10s1x5-5x35-2x120-1x9-1x53">⚔️ Download army</a>
+            <button class="btn btn-ghost btn-sm" data-copy="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e39_48-4p10e40_13-2p16e4_24-0p4e14_32i1x177-1x58-1x135d1x70-1x2u5x7-5x177-2x82-2x5-1x58-1x97-1x28-1x23-1x6-1x1-1x10s1x5-5x35-2x120-1x9-1x53">🔗 Copy link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 2: ZAP THROWERS -->
+  <section class="strat" id="zap-throwers" style="background:linear-gradient(180deg,transparent,rgba(76,201,240,.03))">
+    <div class="wrap">
+      <div class="strat-head">
+        <span class="strat-num">02</span>
+        <h3>Zap Throwers (Dragon Duke)</h3>
+        <div class="chips"><span class="chip hybrid">Hybrid</span><span class="chip medium">Medium</span></div>
+      </div>
+      <p class="lead" style="margin-top:10px">A surgical hybrid: <b>Lightning + Earthquake</b> spells blow open one
+        dangerous defense cluster, a <b>Dragon Duke</b> with a <b>Rocket Backpack</b> darts in to finish softened
+        defenses, and a wave of <b>Throwers</b> grinds through the hole you made.</p>
+
+      <div class="strat-grid">
+        <div>
+          <ol class="steps">
+            <li><b>Pick your zap target.</b> Find the one defense cluster that would shred your ground troops — usually
+              a Multi-Gear Tower + Inferno or a Scattershot pair. That's what you're deleting.</li>
+            <li><b>Zap it open.</b> Stack your <b>Lightning</b> spells (plus an <b>Earthquake</b>) on that cluster
+              before you deploy anything. You want it gone or one hit from gone.</li>
+            <li><b>Funnel both shoulders.</b> Use your King, Queen and a few troops to clear the corners either side of
+              your entry so the Throwers march straight in.</li>
+            <li><b>Rocket the Duke in.</b> Send the <b>Dragon Duke</b> through the gap; the <b>Rocket Backpack</b> lets
+              it leap onto the next priority defense and stay enraged. Keep it moving toward the core.</li>
+            <li><b>March the Throwers + spells.</b> Commit the Thrower line behind the Duke. Drop <b>Rage</b> on the
+              cluster and <b>Freeze</b> the Inferno / Super Wizard Tower as they enter. The <b>Log Launcher</b> siege
+              opens walls on the way.</li>
+          </ol>
+
+          <div class="bestvs">
+            <div class="yes">
+              <h5>✓ Use it against</h5>
+              <ul><li>Bases with one obvious "zap-able" defense knot</li><li>Layouts where the core is reachable once one cluster dies</li></ul>
+            </div>
+            <div class="no">
+              <h5>✕ Avoid when</h5>
+              <ul><li>Defenses are spread out (nothing worth zapping)</li><li>Air defense is stacked around the Duke's lane</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="army-box">
+            <h4>Army at a glance</h4>
+            <div class="roster-label">Core</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Throwers (main grind line)</span></li>
+              <li><span>Dragon Duke + Rocket Backpack (surgical finisher)</span></li>
+            </ul>
+            <div class="roster-label">Support &amp; spells</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Lightning + Earthquake (the "zap")</span></li>
+              <li><span>Rage · Freeze · Poison</span></li>
+              <li><span>Log Launcher siege for walls</span></li>
+            </ul>
+            <div class="roster-label">Heroes &amp; equipment <span class="faint" style="text-transform:none;letter-spacing:0;font-weight:400">— ★ carries the attack</span></div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span><b>Dragon Duke</b> — Rocket Backpack ★ (flame run)</span></li>
+              <li><span><b>Grand Warden</b> — Eternal Tome + Fireball ★</span></li>
+              <li><span><b>Archer Queen</b> — Action Figure + Giant Arrow</span></li>
+              <li><span><b>Barbarian King</b> — Spiky Ball + Giant Gauntlet</span></li>
+              <li><span><b>Royal Champion</b> — Electro Boots + Rocket Spear</span></li>
+              <li><span><b>Minion Prince</b> — Meteor Staff + Henchmen Puppet</span></li>
+            </ul>
+            <p class="faint" style="font-size:.82rem;margin:10px 0 0">Recommended meta loadout — the exact troops,
+              spells and equipment import automatically with the download.</p>
+          </div>
+
+          <div class="callout">💡 <strong>Common mistake:</strong> zapping the wrong building. Spend the extra five
+            seconds identifying the defense that actually kills your Throwers — usually the splash/Inferno cluster, not
+            the Town Hall.</div>
+
+          <div class="dl-row">
+            <a class="btn btn-meteor btn-sm" href="https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e14_32-1p3e48_39-2p16e5_24-7p4e53_52i1x147-1x64-1x188-1x87d3x0-1x10u2x5-2x1-5x7-2x28-2x58-2x82-11x132-4x26-1x123-1x91-1x135-1x188s4x120-1x9-1x35-1x5-1x70-1x98">⚔️ Download army</a>
+            <button class="btn btn-ghost btn-sm" data-copy="https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e14_32-1p3e48_39-2p16e5_24-7p4e53_52i1x147-1x64-1x188-1x87d3x0-1x10u2x5-2x1-5x7-2x28-2x58-2x82-11x132-4x26-1x123-1x91-1x135-1x188s4x120-1x9-1x35-1x5-1x70-1x98">🔗 Copy link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 3: ELECTRO DRAGON SPAM -->
+  <section class="strat" id="electro">
+    <div class="wrap">
+      <div class="strat-head">
+        <span class="strat-num">03</span>
+        <h3>Electro Dragon Spam</h3>
+        <div class="chips"><span class="chip air">Air</span><span class="chip easy">Beginner-friendly</span></div>
+      </div>
+      <p class="lead" style="margin-top:10px">The easiest three-star to <em>learn</em>: <b>Electro Dragons</b> fire a
+        chain-lightning bolt that arcs between buildings, so on a compact base they melt everything at once. Funnel
+        both sides, then flood the middle.</p>
+
+      <div class="strat-grid">
+        <div>
+          <ol class="steps">
+            <li><b>Funnel both flanks.</b> Send the <b>Dragon Duke</b> down one side and the <b>Queen</b> (with
+              <b>Giant Arrow</b>) down the other to shave the outside buildings. Air armies drift badly without this.</li>
+            <li><b>Line up your Electro Dragons.</b> Deploy them in a spread <em>line</em> along the funnel — never a
+              tight stack — so the <b>Super Wizard Tower</b> can't chain through the whole pack.</li>
+            <li><b>Add Balloons for the point defenses.</b> A few <b>Balloons</b> peel off to kill Infernos / Air
+              Defenses that would otherwise pick your dragons apart.</li>
+            <li><b>Overgrowth &amp; Rage the path.</b> Drop <b>Overgrowth</b> to smother a defense (Monolith / Super
+              Wizard Tower) and <b>Rage</b> to blitz the core. <b>Freeze</b> the Inferno the moment it locks on.</li>
+            <li><b>Let the chain do the work.</b> As buildings cluster in the core, each bolt hits more targets — don't
+              over-manage, just keep the spells feeding the push.</li>
+          </ol>
+
+          <div class="bestvs">
+            <div class="yes">
+              <h5>✓ Use it against</h5>
+              <ul><li>Compact bases (buildings close = more chain targets)</li><li>Weak or poorly-spread Air Defense</li><li>When you want a low-micro attack</li></ul>
+            </div>
+            <div class="no">
+              <h5>✕ Avoid when</h5>
+              <ul><li>Air Defense + Air Sweepers are stacked and centered</li><li>Very spread bases (chains fizzle)</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="army-box">
+            <h4>Army at a glance</h4>
+            <div class="roster-label">Core</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Electro Dragons (chain-lightning body)</span></li>
+              <li><span>Balloons (defense snipers)</span></li>
+              <li><span>Baby Dragon + Minions (cleanup)</span></li>
+            </ul>
+            <div class="roster-label">Support &amp; spells</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Overgrowth · Rage · Freeze</span></li>
+            </ul>
+            <div class="roster-label">Heroes &amp; equipment <span class="faint" style="text-transform:none;letter-spacing:0;font-weight:400">— ★ carries the attack</span></div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span><b>Dragon Duke</b> — Rocket Backpack ★ (flank funnel)</span></li>
+              <li><span><b>Archer Queen</b> — Giant Arrow + Action Figure ★ (flank funnel)</span></li>
+              <li><span><b>Grand Warden</b> — Eternal Tome + Life Gem (keep the pack alive)</span></li>
+              <li><span><b>Minion Prince</b> — Meteor Staff + Metal Pants</span></li>
+              <li><span><b>Barbarian King</b> — Spiky Ball + Vampstache</span></li>
+              <li><span><b>Royal Champion</b> — Electro Boots + Seeking Shield</span></li>
+            </ul>
+            <p class="faint" style="font-size:.82rem;margin:10px 0 0">Recommended meta loadout — the exact troops,
+              spells and equipment import automatically with the download.</p>
+          </div>
+
+          <div class="callout">💡 <strong>Common mistake:</strong> dumping all the Electro Dragons on one spot. Their
+            strength is the <em>chain</em> — spread them so bolts fan across the base, and so one Super Wizard Tower
+            volley can't zap the whole group.</div>
+
+          <div class="dl-row">
+            <a class="btn btn-meteor btn-sm" href="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-6p17e43_49-2m1p16e4_24-7p4e53_52i1x59-1x65-1x188d2x98u10x59-8x5-1x23-1x10-1x62-1x52-1x75s1x2-1x70-6x120-1x5">⚔️ Download army</a>
+            <button class="btn btn-ghost btn-sm" data-copy="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p9e17_48-6p17e43_49-2m1p16e4_24-7p4e53_52i1x59-1x65-1x188d2x98u10x59-8x5-1x23-1x10-1x62-1x52-1x75s1x2-1x70-6x120-1x5">🔗 Copy link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 4: QUEEN CHARGE SUPER BOWLERS -->
+  <section class="strat" id="queen-bowlers" style="background:linear-gradient(180deg,transparent,rgba(192,140,240,.03))">
+    <div class="wrap">
+      <div class="strat-head">
+        <span class="strat-num">04</span>
+        <h3>Queen Charge Super Bowlers</h3>
+        <div class="chips"><span class="chip hybrid">Hybrid</span><span class="chip hard">Advanced</span></div>
+      </div>
+      <p class="lead" style="margin-top:10px">The high-skill, high-reward classic. A <b>Queen Charge</b> backed by
+        <b>five Healers</b> carves through the base and takes the Town Hall plus key defenses; once she's recalled,
+        <b>Super Bowlers</b> smash a core that's already been gutted.</p>
+
+      <div class="strat-grid">
+        <div>
+          <ol class="steps">
+            <li><b>Plan the Queen's path.</b> Pick a side where she can hit the Town Hall and one or two heavy
+              defenses (Eagle, Inferno) without wandering. This is the whole attack — plan it before you deploy.</li>
+            <li><b>Charge with 5 Healers.</b> Drop the <b>Queen</b>, then her <b>Healers</b> a beat later so they lock
+              on. Use <b>Giant Arrow</b> to snipe a defense and <b>Rage/Heal</b> to keep her alive through the core.</li>
+            <li><b>Support the charge.</b> A couple of tanky units and the King protect the Queen's flank and widen the
+              lane she's cutting.</li>
+            <li><b>Recall / finish the charge.</b> When she's taken the TH and the key defenses, bring the main force
+              online — the base is now missing its teeth.</li>
+            <li><b>Super Bowlers smash the core.</b> Send the <b>Super Bowlers</b> into the compromised middle with
+              <b>Rage</b> down for maximum damage; the <b>Warden</b> ability shields them through the last few defenses
+              and the ramping Revenge Tower.</li>
+          </ol>
+
+          <div class="bestvs">
+            <div class="yes">
+              <h5>✓ Use it against</h5>
+              <ul><li>Anti-air bases (this is pure ground)</li><li>Exposed Eagle / key defenses the Queen can reach</li><li>Somewhat open or edge Town Halls</li></ul>
+            </div>
+            <div class="no">
+              <h5>✕ Avoid when</h5>
+              <ul><li>You're not confident reading the Queen's pathing</li><li>The core is a tight maze that stalls Bowlers</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="army-box">
+            <h4>Army at a glance</h4>
+            <div class="roster-label">Core</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Super Bowlers (core smash)</span></li>
+              <li><span>Healers ×5 (the Queen Charge engine)</span></li>
+            </ul>
+            <div class="roster-label">Support &amp; spells</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Rage · Heal · Freeze</span></li>
+              <li><span>Tanky lead units for the charge</span></li>
+            </ul>
+            <div class="roster-label">Heroes &amp; equipment <span class="faint" style="text-transform:none;letter-spacing:0;font-weight:400">— ★ carries the attack</span></div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span><b>Archer Queen</b> — Giant Arrow + Invisibility Vial ★ (the charge)</span></li>
+              <li><span><b>Grand Warden</b> — Eternal Tome + Fireball ★ (shields the smash)</span></li>
+              <li><span><b>Barbarian King</b> — Giant Gauntlet + Spiky Ball (protect the charge)</span></li>
+              <li><span><b>Royal Champion</b> — Electro Boots + Seeking Shield</span></li>
+              <li><span><b>Minion Prince</b> — Meteor Staff + Metal Pants</span></li>
+              <li><span><b>Dragon Duke</b> — Rocket Backpack (funnel)</span></li>
+            </ul>
+            <p class="faint" style="font-size:.82rem;margin:10px 0 0">Recommended meta loadout — the exact troops,
+              spells and equipment import automatically with the download.</p>
+          </div>
+
+          <div class="callout">💡 <strong>Common mistake:</strong> dropping the Healers too early or too late. Place
+            them right as the Queen takes her first shots so they lock onto her — not onto your funnel troops.</div>
+
+          <div class="dl-row">
+            <a class="btn btn-meteor btn-sm" href="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p17e16_48-0p9e14_32-2p7e4_19-7p10e52_59i1x147-1x64-1x188d1x9-1x17-1x53u1x1-3x28-3x5-2x6-5x7-1x23-2x58-1x82-1x97-5x80-1x123-1x10-1x62-1x52-1x75s3x35-2x120-3x2">⚔️ Download army</a>
+            <button class="btn btn-ghost btn-sm" data-copy="https://link.clashofclans.com/en/?action=CopyArmy&army=h1p17e16_48-0p9e14_32-2p7e4_19-7p10e52_59i1x147-1x64-1x188d1x9-1x17-1x53u1x1-3x28-3x5-2x6-5x7-1x23-2x58-1x82-1x97-5x80-1x123-1x10-1x62-1x52-1x75s3x35-2x120-3x2">🔗 Copy link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 5: HYDRA -->
+  <section class="strat" id="hydra">
+    <div class="wrap">
+      <div class="strat-head">
+        <span class="strat-num">05</span>
+        <h3>Hydra</h3>
+        <div class="chips"><span class="chip air">Air</span><span class="chip hard">Advanced</span></div>
+      </div>
+      <p class="lead" style="margin-top:10px">A pure-air powerhouse: <b>Ice Hounds</b> tank at the front while
+        <b>Dragons</b> and <b>Dragon Riders</b> follow behind, with <b>Overgrowth</b> controlling pathing and soaking
+        damage. Two heroes funnel opposite flanks and the pack rolls the core.</p>
+
+      <div class="strat-grid">
+        <div>
+          <ol class="steps">
+            <li><b>Funnel from both corners.</b> The <b>Dragon Duke</b> takes one flank, the <b>Queen</b> the other.
+              You need both shoulders clean so the air pack drives to the middle, not around it.</li>
+            <li><b>Ice Hounds first.</b> Drop the <b>Ice Hounds</b> as the front line. They tank the Air Defenses and,
+              when they pop, drop a slowing pool that protects everything behind them.</li>
+            <li><b>Dragons + Dragon Riders behind.</b> Deploy them <em>spread</em> right behind the hounds so the Super
+              Wizard Tower and Air Sweepers can't catch the whole group at once.</li>
+            <li><b>Overgrowth to steer &amp; shield.</b> Drop <b>Overgrowth</b> on the defense you want smothered and to
+              nudge the pack's pathing toward the core. <b>Rage/Freeze</b> for the final defenses.</li>
+            <li><b>Warden up, finish clean.</b> Pop the Warden ability entering the core and save a spell for the
+              roaming Guardian and Revenge Tower so the tail doesn't cost you the third star.</li>
+          </ol>
+
+          <div class="bestvs">
+            <div class="yes">
+              <h5>✓ Use it against</h5>
+              <ul><li>Bases without stacked, centered Air Defense</li><li>Layouts you can funnel cleanly from two sides</li></ul>
+            </div>
+            <div class="no">
+              <h5>✕ Avoid when</h5>
+              <ul><li>Air Defenses + Sweepers are centralized and high-level</li><li>You can't get a clean two-sided funnel</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="army-box">
+            <h4>Army at a glance</h4>
+            <div class="roster-label">Core</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Ice Hounds (front tanks)</span></li>
+              <li><span>Dragons + Dragon Riders (damage)</span></li>
+              <li><span>Minions (cleanup)</span></li>
+            </ul>
+            <div class="roster-label">Support &amp; spells</div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span>Overgrowth · Rage · Freeze · Poison</span></li>
+            </ul>
+            <div class="roster-label">Heroes &amp; equipment <span class="faint" style="text-transform:none;letter-spacing:0;font-weight:400">— ★ carries the attack</span></div>
+            <ul class="roster" style="grid-template-columns:1fr">
+              <li><span><b>Dragon Duke</b> — Rocket Backpack ★ (flank funnel)</span></li>
+              <li><span><b>Archer Queen</b> — Giant Arrow + Action Figure ★ (flank funnel)</span></li>
+              <li><span><b>Grand Warden</b> — Eternal Tome + Rage Gem ★ (core push)</span></li>
+              <li><span><b>Minion Prince</b> — Meteor Staff + Metal Pants</span></li>
+              <li><span><b>Barbarian King</b> — Spiky Ball + Giant Gauntlet</span></li>
+              <li><span><b>Royal Champion</b> — Electro Boots + Seeking Shield</span></li>
+            </ul>
+            <p class="faint" style="font-size:.82rem;margin:10px 0 0">Recommended meta loadout — the exact troops,
+              spells and equipment import automatically with the download.</p>
+          </div>
+
+          <div class="callout">💡 <strong>Common mistake:</strong> deploying the Dragons before the Ice Hounds have
+            soaked the Air Defenses. Hounds <em>first</em>, always — they're the shield the whole army hides behind.</div>
+
+          <div class="dl-row">
+            <a class="btn btn-meteor btn-sm" href="https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_24-1p9e17_48-7p4e52_59i2x65-1x5-1x188d2x98u8x8-6x65-1x76-1x10s4x120-2x5-2x70-1x9">⚔️ Download army</a>
+            <button class="btn btn-ghost btn-sm" data-copy="https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-2m1p16e4_24-1p9e17_48-7p4e52_59i2x65-1x5-1x188d2x98u8x8-6x65-1x76-1x10s4x120-2x5-2x70-1x9">🔗 Copy link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING NOTICE -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="notice">
+        <strong>Before a serious war:</strong> army links copy in the exact troop, spell, siege and equipment
+        loadout, but the meta moves with every balance patch. If a strategy under-performs, it's almost always
+        <em>hero/equipment level</em> or <em>funnel</em> — not the composition. Practice each one in a friendly
+        challenge first. Then go get your CWL base sorted. →
+      </div>
+      <div class="center" style="margin-top:22px">
+        <a class="btn btn-gold" href="defenses.html">🛡️ Now lock down your defense</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="rock">☄️</span> TH18 <b>War&nbsp;Hub</b></div>
+        <div class="faint">Unofficial fan site. Not affiliated with Supercell.</div>
+      </div>
+      <div class="src">
+        Army links and strategy notes curated from public community guides (AllClash, Blueprint CoC, TrophyCoach) and
+        Supercell's official TH18 release notes. Metas shift every patch — verify before you attack.
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
