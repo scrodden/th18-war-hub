@@ -320,6 +320,25 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
   .btn:hover, .nav-card:hover { transform: none; }
 }
 
+/* ---------- Attack picker ---------- */
+.picker { display: flex; flex-direction: column; gap: 15px; }
+.pq { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.pq-label { font-weight: 700; min-width: 160px; font-size: .95rem; }
+.pq-opts { display: flex; gap: 8px; flex-wrap: wrap; }
+.popt { background: var(--panel-2); border: 1px solid var(--border-2); color: var(--muted);
+  border-radius: 9px; padding: 8px 14px; font-weight: 600; font-size: .9rem; cursor: pointer;
+  transition: color .12s, border-color .12s, background .12s; }
+.popt:hover { color: var(--text); border-color: var(--gold); }
+.popt.active { background: rgba(245,185,66,.14); color: var(--gold); border-color: var(--gold); }
+.picker-actions { display: flex; gap: 12px; align-items: center; margin-top: 4px; flex-wrap: wrap; }
+.picker-result { margin-top: 8px; border-top: 1px solid var(--border); padding-top: 16px; }
+.rec { background: var(--bg-2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.rec-tag { font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--meteor); }
+.rec.alt .rec-tag { color: var(--faint); }
+.rec h4 { margin: 6px 0 5px; font-size: 1.15rem; display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+.rec h4 a { color: var(--gold); }
+.rec p { margin: 0; color: var(--muted); font-size: .92rem; }
+
 /* ---------- Fresh (auto-updated weekly) ---------- */
 .fresh-section { background: linear-gradient(180deg, rgba(78,201,138,.05), transparent); }
 .fresh-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }

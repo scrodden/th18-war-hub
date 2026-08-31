@@ -61,6 +61,77 @@
   }
 })();
 
+/* ---- Attack picker (attacks page) ---- */
+(function () {
+  "use strict";
+  var root = document.getElementById("picker");
+  if (!root) return;
+
+  var STRATS = {
+    thrower:  { id: "thrower-smash", name: "Mass Thrower Smash", tag: "Ground", cls: "ground",
+      why: "Throwers lob over walls into the compartments while Healers keep the pack alive — the safe, high-floor meta pick." },
+    rcmeteor: { id: "rc-meteor", name: "RC Walk Meteor Golem", tag: "Ground", cls: "ground",
+      why: "An RC walk builds the funnel and Meteor Golems grind a centered, splash-heavy core." },
+    bowlers:  { id: "queen-bowlers", name: "Queen Charge Super Bowlers", tag: "Ground", cls: "ground",
+      why: "Pure ground — it ignores strong air defense and the Queen snipes exposed key defenses." },
+    fireloon: { id: "fireball-loons", name: "Fireball Rocket Loons", tag: "Air", cls: "air",
+      why: "Fireball + Giant Arrow delete the air defense, then fast Rocket Balloons rip through the core." },
+    electro:  { id: "electro", name: "Electro Dragon Spam", tag: "Air", cls: "air",
+      why: "Chain lightning shreds compact bases with weak air defense — and it's low-micro to fly." },
+    hydra:    { id: "hydra", name: "Hydra", tag: "Air", cls: "air",
+      why: "Ice Hounds tank for Dragons and Dragon Riders on bases without stacked, centered air defense." },
+    zap:      { id: "zap-throwers", name: "Zap Throwers (Dragon Duke)", tag: "Hybrid", cls: "hybrid",
+      why: "Zap open the one scary defense cluster, then Throwers grind through the hole you made." }
+  };
+
+  var state = {};
+  root.querySelectorAll(".pq").forEach(function (row) {
+    var q = row.getAttribute("data-q");
+    row.querySelectorAll(".popt").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        row.querySelectorAll(".popt").forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        state[q] = btn.getAttribute("data-v");
+      });
+    });
+  });
+
+  function recommend(a) {
+    var s = { thrower: 1, rcmeteor: 0, bowlers: 0, fireloon: 0, electro: 0, hydra: 0, zap: 0 };
+    if (a.th === "center") { s.rcmeteor += 2; s.thrower += 1; s.fireloon += 1; }
+    else if (a.th === "edge") { s.bowlers += 2; s.zap += 1; s.electro += 1; }
+    if (a.air === "strong") { s.thrower += 1; s.rcmeteor += 1; s.bowlers += 3; }
+    else if (a.air === "weak") { s.fireloon += 2; s.electro += 2; s.hydra += 2; }
+    if (a.layout === "compart") { s.thrower += 2; s.rcmeteor += 2; s.electro += 1; s.zap += 1; }
+    else if (a.layout === "open") { s.hydra += 2; s.fireloon += 1; s.bowlers += 1; }
+    if (a.pref === "ground") { s.thrower += 2; s.rcmeteor += 2; s.bowlers += 2; s.fireloon -= 2; s.electro -= 2; s.hydra -= 2; }
+    else if (a.pref === "air") { s.fireloon += 2; s.electro += 2; s.hydra += 2; s.thrower -= 2; s.rcmeteor -= 2; s.bowlers -= 2; }
+    else if (a.pref === "either") { s.thrower += 1; s.hydra += 1; }
+    return Object.keys(s).map(function (k) { return [k, s[k]]; })
+      .sort(function (x, y) { return y[1] - x[1]; }).map(function (x) { return x[0]; });
+  }
+
+  function card(key, primary) {
+    var st = STRATS[key];
+    return '<div class="rec' + (primary ? "" : " alt") + '">' +
+      '<span class="rec-tag">' + (primary ? "Recommended" : "Also consider") + "</span>" +
+      '<h4><a href="#' + st.id + '">' + st.name + '</a> <span class="chip ' + st.cls + '">' + st.tag + "</span></h4>" +
+      "<p>" + st.why + "</p></div>";
+  }
+
+  document.getElementById("picker-go").addEventListener("click", function () {
+    var order = recommend(state);
+    var out = document.getElementById("picker-result");
+    var answered = Object.keys(state).length;
+    var lead = answered < 4
+      ? '<p class="faint" style="font-size:.85rem;margin:0 0 10px">Based on ' + answered +
+        ' of 4 answers — fill in the rest to refine it.</p>' : "";
+    out.innerHTML = lead + card(order[0], true) + card(order[1], false);
+    out.hidden = false;
+    out.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  });
+})();
+
 /* ---- Per-base design schematics on the defenses page ---- */
 (function () {
   "use strict";

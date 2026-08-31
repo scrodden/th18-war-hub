@@ -78,6 +78,54 @@
     </div>
   </section>
 
+  <!-- ATTACK PICKER -->
+  <section id="picker">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:18px">
+        <div class="eyebrow">Not sure what to bring?</div>
+        <h2>Attack picker — match your army to the base</h2>
+        <p class="lead">Answer four quick questions about the base you're facing and get a recommended strategy,
+          with a link straight to its guide.</p>
+      </div>
+      <div class="picker card pad-lg">
+        <div class="pq" data-q="th">
+          <span class="pq-label">Enemy Town Hall</span>
+          <div class="pq-opts">
+            <button class="popt" data-v="center">Centered / buried</button>
+            <button class="popt" data-v="edge">Edge / exposed</button>
+          </div>
+        </div>
+        <div class="pq" data-q="air">
+          <span class="pq-label">Air defense</span>
+          <div class="pq-opts">
+            <button class="popt" data-v="strong">Strong &amp; centered</button>
+            <button class="popt" data-v="weak">Weak or spread out</button>
+          </div>
+        </div>
+        <div class="pq" data-q="layout">
+          <span class="pq-label">Base layout</span>
+          <div class="pq-opts">
+            <button class="popt" data-v="compart">Tight compartments / ring</button>
+            <button class="popt" data-v="open">Open / spread</button>
+          </div>
+        </div>
+        <div class="pq" data-q="pref">
+          <span class="pq-label">You prefer</span>
+          <div class="pq-opts">
+            <button class="popt" data-v="ground">Ground</button>
+            <button class="popt" data-v="air">Air</button>
+            <button class="popt" data-v="either">Either</button>
+          </div>
+        </div>
+        <div class="picker-actions">
+          <button id="picker-go" class="btn btn-meteor btn-sm">Recommend an attack →</button>
+          <span class="faint" id="picker-hint" style="font-size:.85rem">Tip: pick an option in each row for the best match.</span>
+        </div>
+        <div id="picker-result" class="picker-result" hidden></div>
+      </div>
+    </div>
+  </section>
+
   <!-- FRESH THIS WEEK (auto-updated by the weekly bot) -->
   <section class="fresh-section" id="fresh">
     <div class="wrap">
