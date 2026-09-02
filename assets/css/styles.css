@@ -320,6 +320,19 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
   .btn:hover, .nav-card:hover { transform: none; }
 }
 
+/* ---------- Meta digest ---------- */
+.digest-card { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px;
+  padding: 16px 20px; border: 1px solid var(--border); border-radius: 12px;
+  background: linear-gradient(180deg, rgba(78,201,138,.06), var(--bg-2)); }
+.digest-card .dg-title { font-weight: 800; font-family: var(--font-display); font-size: 1.05rem;
+  display: flex; align-items: center; gap: 8px; }
+.digest-card .dg-stat { color: var(--muted); font-size: .9rem; }
+.digest-card .dg-stat b { color: var(--gold); }
+.digest-card .dg-stat a { color: var(--gold-soft); }
+.digest-card .dg-new { display: flex; flex-direction: column; gap: 3px; width: 100%; margin-top: 6px;
+  padding-top: 10px; border-top: 1px solid var(--border); }
+.digest-card .dg-new .h { font-size: .86rem; color: var(--text); }
+
 /* ---------- Video embed ---------- */
 .video-wrap { position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px;
   overflow: hidden; border: 1px solid var(--border); background: var(--bg-2); }

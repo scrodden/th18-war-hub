@@ -1,8 +1,16 @@
 {
-  "updated": "2026-09-01T13:07:20Z",
+  "updated": "2026-09-02T00:24:49Z",
   "sources_ok": 11,
   "sources_failed": [],
   "maps_source": "live",
+  "digest": {
+    "date": "2026-09-02",
+    "new_armies": 0,
+    "new_bases": 0,
+    "total_armies": 28,
+    "total_bases": 47,
+    "highlights": []
+  },
   "armies": [
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p4e59_60-6p11e49_43-2m1p16e4_24-4p10e13_6i2x10-3x5-2x53-1x135-1x188d2x98u6x5-1x53-2x6-1x23-4x1-1x10-9x8-4x65-1x87-1x92-1x188s4x109-1x2-1x9-1x70-2x120",

@@ -316,11 +316,24 @@ def main():
             a["comp"] = info["comp"]
             decoded += 1
 
+    # Weekly "what changed" digest for the home page.
+    highlights = [{"head": x.get("head", ""), "source": x.get("source", ""), "pro": bool(x.get("pro"))}
+                  for x in fin_armies if x.get("first_seen") == today and x.get("head")][:3]
+    digest = {
+        "date": today,
+        "new_armies": a1 + a2,
+        "new_bases": b1 + b2,
+        "total_armies": len(fin_armies),
+        "total_bases": len(fin_bases),
+        "highlights": highlights,
+    }
+
     out = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources_ok": len(ok),
         "sources_failed": failed,
         "maps_source": maps_src,
+        "digest": digest,
         "armies": fin_armies,
         "bases": fin_bases,
     }

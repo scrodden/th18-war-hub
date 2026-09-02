@@ -153,6 +153,45 @@
   });
 })();
 
+/* ---- Weekly meta digest (home page) ---- */
+(function () {
+  "use strict";
+  var el = document.getElementById("meta-digest");
+  if (!el) return;
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  fetch("data/latest.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("no data"); return r.json(); })
+    .then(function (d) {
+      var g = d.digest || {};
+      var date = g.date || (d.updated || "").slice(0, 10);
+      var changed = (g.new_armies || 0) + (g.new_bases || 0);
+      var head = '<span class="dg-title">📈 This week in the meta ' +
+        '<span class="faint" style="font-weight:500;font-size:.8rem">· ' + esc(date) + "</span></span>";
+      var stat = changed > 0
+        ? '<span class="dg-stat"><b>' + g.new_armies + "</b> new armies · <b>" + g.new_bases +
+          "</b> new bases found this week</span>"
+        : '<span class="dg-stat">No new armies or bases this week — the meta held steady.</span>';
+      var totals = '<span class="dg-stat">Tracking <b>' + (g.total_armies || 0) + "</b> armies · <b>" +
+        (g.total_bases || 0) + '</b> bases · <a href="attacks.html#fresh">auto-refreshed weekly</a></span>';
+      var hl = "";
+      if (g.highlights && g.highlights.length) {
+        hl = '<div class="dg-new">' + g.highlights.map(function (h) {
+          return '<span class="h">🆕 ' + esc(h.head) + ' <span class="faint">· ' + esc(h.source) +
+            (h.pro ? " · PRO" : "") + "</span></span>";
+        }).join("") + "</div>";
+      }
+      el.innerHTML = head + stat + totals + hl;
+    })
+    .catch(function () {
+      var s = document.getElementById("digest-section");
+      if (s) s.style.display = "none";
+    });
+})();
+
 /* ---- Per-base design schematics on the defenses page ---- */
 (function () {
   "use strict";
