@@ -358,6 +358,9 @@ footer .src { font-size: .82rem; color: var(--faint); max-width: 620px; }
   background: var(--meteor); color: #fff; font-size: .62rem; font-weight: 800;
   letter-spacing: .05em; padding: 2px 7px; border-radius: 999px;
 }
+.feed-filters { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 16px 0 4px; }
+.feed-filters .ff-label { font-size: .82rem; color: var(--faint); font-weight: 700; margin-right: 2px; }
+.feed-filters .popt { padding: 6px 12px; font-size: .84rem; }
 .fresh-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 18px; }
 .fresh-item {
   display: flex; align-items: center; gap: 10px; padding: 12px 14px;

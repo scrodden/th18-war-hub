@@ -280,6 +280,8 @@
 
   function renderList(el, items, kind) {
     if (!el) return;
+    var nx = el.nextElementSibling;
+    if (nx && nx.classList.contains("fresh-more")) nx.remove();
     if (!items || !items.length) {
       el.innerHTML = '<p class="fresh-empty">No links yet — check back after the next Tuesday refresh.</p>';
       return;
@@ -302,6 +304,29 @@
     var block = el && el.closest("[data-pro-block]");
     if (block && !n) block.style.display = "none";
   }
+  function showBlock(el, n) {
+    var block = el && el.closest("[data-pro-block]");
+    if (block) block.style.display = n ? "" : "none";
+  }
+  function setupBaseFilters(b) {
+    var bar = document.getElementById("base-filters");
+    function render(f) {
+      var pro = f === "all" ? b.pro : b.pro.filter(function (x) { return (x.type || "") === f; });
+      var rest = f === "all" ? b.rest : b.rest.filter(function (x) { return (x.type || "") === f; });
+      if (proBaseEl) { renderList(proBaseEl, pro, "base"); showBlock(proBaseEl, pro.length); }
+      renderList(baseEl, rest, "base");
+    }
+    render("all");
+    if (bar) {
+      bar.querySelectorAll(".popt").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          bar.querySelectorAll(".popt").forEach(function (o) { o.classList.remove("active"); });
+          btn.classList.add("active");
+          render(btn.getAttribute("data-filter"));
+        });
+      });
+    }
+  }
 
   fetch("data/latest.json", { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error("no data"); return r.json(); })
@@ -311,8 +336,7 @@
       var a = split(data.armies), b = split(data.bases);
       if (proArmyEl) { renderList(proArmyEl, a.pro, "army"); hideBlockIfEmpty(proArmyEl, a.pro.length); }
       renderList(armyEl, a.rest, "army");
-      if (proBaseEl) { renderList(proBaseEl, b.pro, "base"); hideBlockIfEmpty(proBaseEl, b.pro.length); }
-      renderList(baseEl, b.rest, "base");
+      setupBaseFilters(b);
     })
     .catch(function () {
       document.querySelectorAll("[data-fresh-fallback]").forEach(function (n) { n.style.display = "block"; });
