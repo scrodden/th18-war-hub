@@ -1,19 +1,65 @@
 {
-  "updated": "2026-09-29T13:10:38Z",
+  "updated": "2026-10-06T18:44:23Z",
   "sources_ok": 10,
   "sources_failed": [
     "https://trophycoach.com/clash-of-clans/guides/best-armies-by-town-hall (HTTPError)"
   ],
   "maps_source": "live",
   "digest": {
-    "date": "2026-09-29",
-    "new_armies": 0,
-    "new_bases": 0,
-    "total_armies": 28,
-    "total_bases": 48,
-    "highlights": []
+    "date": "2026-10-06",
+    "new_armies": 3,
+    "new_bases": 2,
+    "total_armies": 31,
+    "total_bases": 50,
+    "highlights": [
+      {
+        "head": "8× Balloon · 8× Dragon · 5× Dragon Rider +3",
+        "source": "blueprintcoc.com",
+        "pro": true
+      },
+      {
+        "head": "7× Dragon · 6× Dragon Rider · 3× Wall Breaker +3",
+        "source": "blueprintcoc.com",
+        "pro": true
+      },
+      {
+        "head": "6× Super Yeti · 4× Druid · 2× Ice Golem +4",
+        "source": "blueprintcoc.com",
+        "pro": true
+      }
+    ]
   },
   "armies": [
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-6p4e49_43-2m1p16e4_24-4p10e6_13i1x135-1x188-1x81-1x63d2x98u8x5-2x23-1x1-3x10-8x8-5x65-1x87-1x92-1x188s4x109-1x2-1x9-1x70-1x120-1x10",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-10-06",
+      "pro": true,
+      "head": "8× Balloon · 8× Dragon · 5× Dragon Rider +3",
+      "spells": "Ice Block · Rage · Poison · Overgrowth · Totem · Earthquake",
+      "equip": "Fire Heart · Revenge Deck · Meteor Staff · Dark Orb · Eternal Tome · Rage Gem · Seeking Shield · Rocket Spear",
+      "comp": "Troops: 8× Balloon, 2× Baby Dragon, 1× Archer, 3× Minion, 8× Dragon, 5× Dragon Rider | Siege: Log Launcher, Battle Drill, Sky Wagon | Spells: 4× Ice Block, 1× Rage, 1× Poison, 1× Overgrowth, 1× Totem, 1× Earthquake | Heroes: Dragon Duke (Fire Heart + Revenge Deck) · Angry Jelly; Minion Prince (Meteor Staff + Dark Orb) · Phoenix; Grand Warden (Eternal Tome + Rage Gem) · Sneezy; Royal Champion (Seeking Shield + Rocket Spear) · Spirit Fox"
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e49_43-2m1p7e34_4-1p3e48_17-7p4e52_60i1x188-1x81-1x63-1x135d1x2-1x98u1x76-7x8-6x65-1x1-1x58-3x4-1x52-1x62-1x87s3x120-2x5-2x70-1x9-1x17",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-10-06",
+      "pro": true,
+      "head": "7× Dragon · 6× Dragon Rider · 3× Wall Breaker +3",
+      "spells": "Totem · Freeze · Overgrowth · Poison · Skeleton",
+      "equip": "Meteor Staff · Dark Orb · Healing Tome · Eternal Tome · Action Figure · Giant Arrow · Fire Heart · Revenge Deck",
+      "comp": "Troops: 1× Ice Hound, 7× Dragon, 6× Dragon Rider, 1× Archer, 1× Ice Golem, 3× Wall Breaker | Siege: Battle Blimp, Stone Slammer, Log Launcher | Spells: 3× Totem, 2× Freeze, 2× Overgrowth, 1× Poison, 1× Skeleton | Heroes: Minion Prince (Meteor Staff + Dark Orb) · Greedy Raven; Grand Warden (Healing Tome + Eternal Tome) · Poison Lizard; Archer Queen (Action Figure + Giant Arrow) · Unicorn; Dragon Duke (Fire Heart + Revenge Deck) · Phoenix"
+    },
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h0p9e14_10-1p16e48_17-7p4e52_59-2p2e19_24i2x135-1x147-1x64d3x120-1x9u6x147-4x123-1x97-2x58-1x23-2x28-2x1-2x135-1x188s2x2-2x98-1x70-1x5",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-10-06",
+      "pro": true,
+      "head": "6× Super Yeti · 4× Druid · 2× Ice Golem +4",
+      "spells": "Rage · Revive · Overgrowth · Freeze",
+      "equip": "Spiky Ball · Giant Gauntlet · Action Figure · Giant Arrow · Fire Heart · Electro Fangs · Heroic Torch · Rage Gem",
+      "comp": "Troops: 6× Super Yeti, 4× Druid, 1× Apprentice Warden, 2× Ice Golem, 1× Baby Dragon, 2× Super Wall Breaker, 2× Archer | Siege: Troop Launcher, Sky Wagon | Spells: 2× Rage, 2× Revive, 1× Overgrowth, 1× Freeze | Heroes: Barbarian King (Spiky Ball + Giant Gauntlet) · Frosty; Archer Queen (Action Figure + Giant Arrow) · Sneezy; Dragon Duke (Fire Heart + Electro Fangs) · Phoenix; Grand Warden (Heroic Torch + Rage Gem) · Electro Owl"
+    },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p4e59_60-6p11e49_43-2m1p16e4_24-4p10e13_6i2x10-3x5-2x53-1x135-1x188d2x98u6x5-1x53-2x6-1x23-4x1-1x10-9x8-4x65-1x87-1x92-1x188s4x109-1x2-1x9-1x70-2x120",
       "source": "blueprintcoc.com",
@@ -296,6 +342,22 @@
     }
   ],
   "bases": [
+    {
+      "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAQgAAAAJZUwAQoWSfFnnrZHocTuOG",
+      "source": "allclash.com",
+      "th": 18,
+      "type": "WB",
+      "first_seen": "2026-10-06",
+      "pro": false
+    },
+    {
+      "url": "https://link.clashofclans.com/en?action=OpenLayout&id=TH18%3AWB%3AAAAAGQAAAAK-ZzzF-pt2rebJwpfOvTnE",
+      "source": "allclash.com",
+      "th": 18,
+      "type": "WB",
+      "first_seen": "2026-10-06",
+      "pro": false
+    },
     {
       "url": "https://link.clashofclans.com/ar/?action=OpenLayout&id=TH18%3AWB%3AAAAASwAAAAISy-vkCHwN_KJPwYi6zDh9",
       "source": "blueprintcoc.com",
