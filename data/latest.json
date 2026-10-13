@@ -1,35 +1,35 @@
 {
-  "updated": "2026-10-06T18:44:23Z",
+  "updated": "2026-10-13T19:42:56Z",
   "sources_ok": 10,
   "sources_failed": [
     "https://trophycoach.com/clash-of-clans/guides/best-armies-by-town-hall (HTTPError)"
   ],
   "maps_source": "live",
   "digest": {
-    "date": "2026-10-06",
-    "new_armies": 3,
-    "new_bases": 2,
-    "total_armies": 31,
+    "date": "2026-10-13",
+    "new_armies": 1,
+    "new_bases": 0,
+    "total_armies": 32,
     "total_bases": 50,
     "highlights": [
       {
-        "head": "8× Balloon · 8× Dragon · 5× Dragon Rider +3",
-        "source": "blueprintcoc.com",
-        "pro": true
-      },
-      {
-        "head": "7× Dragon · 6× Dragon Rider · 3× Wall Breaker +3",
-        "source": "blueprintcoc.com",
-        "pro": true
-      },
-      {
-        "head": "6× Super Yeti · 4× Druid · 2× Ice Golem +4",
+        "head": "20× Balloon · 5× Dragon · 5× Rocket Balloon +6",
         "source": "blueprintcoc.com",
         "pro": true
       }
     ]
   },
   "armies": [
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-4p4e6_13-2m1p16e34_4-6p17e61_49i1x63-1x81-2x188d1x70-1x98u5x8-2x76-20x5-5x57-2x23-1x6-2x10-3x1-1x0-3x188s1x120-4x109-2x5-1x2-1x10-1x9",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-10-13",
+      "pro": true,
+      "head": "20× Balloon · 5× Dragon · 5× Rocket Balloon +6",
+      "spells": "Totem · Ice Block · Freeze · Rage · Earthquake · Poison",
+      "equip": "Fire Heart · Revenge Deck · Seeking Shield · Rocket Spear · Healing Tome · Eternal Tome · Portal Pendant · Meteor Staff",
+      "comp": "Troops: 5× Dragon, 2× Ice Hound, 20× Balloon, 5× Rocket Balloon, 2× Baby Dragon, 1× Wizard, 2× Minion, 3× Archer, 1× Barbarian | Siege: Sky Wagon | Spells: 1× Totem, 4× Ice Block, 2× Freeze, 1× Rage, 1× Earthquake, 1× Poison | Heroes: Dragon Duke (Fire Heart + Revenge Deck) · Angry Jelly; Royal Champion (Seeking Shield + Rocket Spear) · Phoenix; Grand Warden (Healing Tome + Eternal Tome) · Sneezy; Minion Prince (Portal Pendant + Meteor Staff) · Greedy Raven"
+    },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-6p4e49_43-2m1p16e4_24-4p10e6_13i1x135-1x188-1x81-1x63d2x98u8x5-2x23-1x1-3x10-8x8-5x65-1x87-1x92-1x188s4x109-1x2-1x9-1x70-1x120-1x10",
       "source": "blueprintcoc.com",
