@@ -1,23 +1,17 @@
 {
-  "updated": "2026-10-13T19:42:56Z",
+  "updated": "2026-10-20T17:43:49Z",
   "sources_ok": 10,
   "sources_failed": [
     "https://trophycoach.com/clash-of-clans/guides/best-armies-by-town-hall (HTTPError)"
   ],
   "maps_source": "live",
   "digest": {
-    "date": "2026-10-13",
-    "new_armies": 1,
+    "date": "2026-10-20",
+    "new_armies": 0,
     "new_bases": 0,
     "total_armies": 32,
     "total_bases": 50,
-    "highlights": [
-      {
-        "head": "20× Balloon · 5× Dragon · 5× Rocket Balloon +6",
-        "source": "blueprintcoc.com",
-        "pro": true
-      }
-    ]
+    "highlights": []
   },
   "armies": [
     {
