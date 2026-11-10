@@ -1,14 +1,14 @@
 {
-  "updated": "2026-11-03T19:55:37Z",
+  "updated": "2026-11-10T20:10:17Z",
   "sources_ok": 10,
   "sources_failed": [
     "https://trophycoach.com/clash-of-clans/guides/best-armies-by-town-hall (HTTPError)"
   ],
   "maps_source": "live",
   "digest": {
-    "date": "2026-11-03",
+    "date": "2026-11-10",
     "new_armies": 0,
-    "new_bases": 2,
+    "new_bases": 0,
     "total_armies": 32,
     "total_bases": 52,
     "highlights": []
