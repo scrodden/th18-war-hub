@@ -1,19 +1,35 @@
 {
-  "updated": "2026-11-10T20:10:17Z",
+  "updated": "2026-11-17T21:28:35Z",
   "sources_ok": 10,
   "sources_failed": [
     "https://trophycoach.com/clash-of-clans/guides/best-armies-by-town-hall (HTTPError)"
   ],
   "maps_source": "live",
   "digest": {
-    "date": "2026-11-10",
-    "new_armies": 0,
+    "date": "2026-11-17",
+    "new_armies": 1,
     "new_bases": 0,
-    "total_armies": 32,
+    "total_armies": 33,
     "total_bases": 52,
-    "highlights": []
+    "highlights": [
+      {
+        "head": "33× Balloon · 4× Archer · 3× Ice Hound +3",
+        "source": "blueprintcoc.com",
+        "pro": true
+      }
+    ]
   },
   "armies": [
+    {
+      "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h6p17e43_49-4p4e6_13-2m1p16e5_22-7p11e60_52i1x63-1x76-2x188d1x53-1x98u3x76-33x5-3x63-1x23-1x12-4x1-1x188s3x35-2x10-1x120-2x5-2x109-1x9",
+      "source": "blueprintcoc.com",
+      "first_seen": "2026-11-17",
+      "pro": true,
+      "head": "33× Balloon · 4× Archer · 3× Ice Hound +3",
+      "spells": "Invisibility · Earthquake · Totem · Freeze · Ice Block · Poison",
+      "equip": "Dark Orb · Meteor Staff · Seeking Shield · Rocket Spear · Life Gem · Fireball · Revenge Deck · Fire Heart",
+      "comp": "Troops: 3× Ice Hound, 33× Balloon, 3× Inferno Dragon, 1× Baby Dragon, 1× Valkyrie, 4× Archer | Siege: Sky Wagon | Spells: 3× Invisibility, 2× Earthquake, 1× Totem, 2× Freeze, 2× Ice Block, 1× Poison | Heroes: Minion Prince (Dark Orb + Meteor Staff) · Greedy Raven; Royal Champion (Seeking Shield + Rocket Spear) · Phoenix; Grand Warden (Life Gem + Fireball) · Sneezy; Dragon Duke (Revenge Deck + Fire Heart) · Angry Jelly"
+    },
     {
       "url": "https://link.clashofclans.com/en/?action=CopyArmy&army=h7p11e52_60-4p4e6_13-2m1p16e34_4-6p17e61_49i1x63-1x81-2x188d1x70-1x98u5x8-2x76-20x5-5x57-2x23-1x6-2x10-3x1-1x0-3x188s1x120-4x109-2x5-1x2-1x10-1x9",
       "source": "blueprintcoc.com",
